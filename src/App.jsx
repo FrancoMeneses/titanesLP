@@ -42,7 +42,7 @@ const router = createBrowserRouter([
         element: <Gimnasia />
       },
       {
-        path: "/aviso-de-privacidad",
+        path: "/aviso-privacidad",
         element: <Aviso />
       }
     ]
