@@ -1,24 +1,31 @@
 import { NavLink } from "react-router-dom"
 import { useState } from "react"
-import { VscChevronDown } from "react-icons/vsc";
+import { VscChevronDown, VscMenu } from "react-icons/vsc";
 
 export const Navbar = () => {
 
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <div className="w-full">
-      <nav className="container min-w-full bg-red-800 text-slate-100 h-20">
-        <div className="flex flex-row h-full w-full justify-between items-center px-4">
-          <NavLink to="/">
+    <div className="w-full sticky z-10 top-0">
+      <nav className="container min-w-full bg-[#9e0404] text-slate-100 h-20">
+        <div className="flex flex-row h-full w-full justify-between items-center px-4 flex-wrap md:flex-nowrap lg:flex-nowrap">
+          <NavLink to="/" onClick={() => setNavbarOpen(false)}>
             <img src="src/assets/Logo1.png" className="w-16 h-16" alt="Titanes All-Stars Logo" />
           </NavLink>
-          <div className="">
-            <ul className="flex flex-row w-[500px] justify-between">
+          <button className="md:hidden lg:hidden" onClick={() => { setNavbarOpen(!navbarOpen) }}>
+            <VscMenu className="text-4xl"></VscMenu>
+          </button>
+          <div className={
+            "w-full md:w-auto lg:w-auto lg:flex lg:flex-row md:flex md:flex-row" +
+            (navbarOpen ? " bg-neutral-700 rounded-sm" : " hidden")
+          }>
+            <ul className={"flex flex-col justify-center items-center w-auto h-auto border md:border-transparent lg:border-transparent shadow md:shadow-none lg:shadow-none md:flex md:flex-row md:w-auto md:gap-x-6 lg:flex lg:flex-row lg:w-auto lg:gap-x-6"}>
               <li className="transition duration-300 hover:text-slate-400 leading-snug h-6 text-center">
                 <NavLink end to='/' className={({ isActive }) =>
                   isActive ? "text-slate-800" : "undefined"
-                }>
+                }
+                  onClick={() => setNavbarOpen(false)}>
                   Inicio
                 </NavLink>
               </li>
@@ -28,25 +35,27 @@ export const Navbar = () => {
                     <span id="smS-span">Sucursales</span>
                     <VscChevronDown id="smS-svg" className="self-center" />
                   </div>
-                  </button>
-                  <ul className="hidden group-hover/suc:block group-hover/suc:absolute group-hover/suc:text-start group-hover/suc:bg-white group-hover/suc:text-slate-600 group-hover/suc:shadow group-hover/suc:border group-hover/suc:border-black">
-                    <li className="my-1 transition duration-300 hover:text-slate-400 leading-snug">
-                      <NavLink end to='/sucursal1'
-                        className={({ isActive }) =>
-                          isActive ? "text-slate-800" : "undefined"
-                        }>
-                        Sucursal 1
-                      </NavLink>
-                    </li>
-                    <li className="my-1 transition duration-300 hover:text-slate-400 leading-snug">
-                      <NavLink end to='/sucursal2'
-                        className={({ isActive }) =>
-                          isActive ? "text-slate-800" : "undefined"
-                        }>
-                        Sucursal 2
-                      </NavLink>
-                    </li>
-                  </ul>
+                </button>
+                <ul className="hidden group-hover/suc:block group-hover/suc:absolute group-hover/suc:text-start group-hover/suc:bg-white group-hover/suc:text-slate-600 group-hover/suc:shadow group-hover/suc:border group-hover/suc:border-black">
+                  <li className="my-1 transition duration-300 hover:text-slate-400 leading-snug">
+                    <NavLink end to='/sucursal1'
+                      className={({ isActive }) =>
+                        isActive ? "text-slate-800" : "undefined"
+                      }
+                      onClick={() => setNavbarOpen(false)}>
+                      Sucursal 1
+                    </NavLink>
+                  </li>
+                  <li className="my-1 transition duration-300 hover:text-slate-400 leading-snug">
+                    <NavLink end to='/sucursal2'
+                      className={({ isActive }) =>
+                        isActive ? "text-slate-800" : "undefined"
+                      }
+                      onClick={() => setNavbarOpen(false)}>
+                      Sucursal 2
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="group/act">
                 <button id="act-btn" className="transition duration-300 hover:text-slate-400 leading-snug">
@@ -60,7 +69,8 @@ export const Navbar = () => {
                     <NavLink end to='/cheerleading'
                       className={({ isActive }) =>
                         isActive ? "text-slate-800" : "undefined"
-                      }>
+                      }
+                      onClick={() => setNavbarOpen(false)}>
                       Cheerleading
                     </NavLink>
                   </li>
@@ -68,7 +78,8 @@ export const Navbar = () => {
                     <NavLink end to='/parkour'
                       className={({ isActive }) =>
                         isActive ? "text-slate-800" : "undefined"
-                      }>
+                      }
+                      onClick={() => setNavbarOpen(false)}>
                       Parkour
                     </NavLink>
                   </li>
@@ -76,7 +87,8 @@ export const Navbar = () => {
                     <NavLink end to='/gimnasia'
                       className={({ isActive }) =>
                         isActive ? "text-slate-800" : "undefined"
-                      }>
+                      }
+                      onClick={() => setNavbarOpen(false)}>
                       Gimnasia
                     </NavLink>
                   </li>
@@ -85,7 +97,8 @@ export const Navbar = () => {
               <li className="transition duration-300 hover:text-slate-400 leading-snug h-6 text-center">
                 <NavLink end to='/aviso-privacidad' className={({ isActive }) =>
                   isActive ? "text-slate-800" : "undefined"
-                    }>
+                }
+                  onClick={() => setNavbarOpen(false)}>
                   Aviso de Privacidad
                 </NavLink>
               </li>
