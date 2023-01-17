@@ -6,7 +6,7 @@ import { Sucursal2 } from "./pages/Sucursales/Sucursal2"
 import { Cheerleading } from "./pages/Actividades/Cheerleading"
 import { Parkour } from "./pages/Actividades/Parkour"
 import { Gimnasia } from "./pages/Actividades/Gimnasia"
-import { Aviso } from "./pages/Sucursales/Aviso"
+import { Aviso } from "./pages/Aviso"
 
 export { Navbar }
 export { Footer }
