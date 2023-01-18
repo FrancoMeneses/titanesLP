@@ -18,10 +18,10 @@ export const Navbar = () => {
           </button>
           <div className={
             "w-full md:w-auto lg:w-auto lg:flex lg:flex-row md:flex md:flex-row" +
-            (navbarOpen ? " bg-neutral-700 rounded-sm" : " hidden")
-          }>
-            <ul className={"flex flex-col justify-center items-center w-auto h-auto border md:border-transparent lg:border-transparent shadow md:shadow-none lg:shadow-none md:flex md:flex-row md:w-auto md:gap-x-6 lg:flex lg:flex-row lg:w-auto lg:gap-x-6"}>
-              <li className="transition duration-300 hover:text-slate-400 leading-snug h-6 text-center">
+            (navbarOpen ? "transition-all duration-300 ease-in-out bg-neutral-700" : " hidden")
+            }>
+            <ul className={"flex flex-col justify-center items-center w-auto h-auto border rounded md:border-transparent lg:border-transparent shadow md:shadow-none lg:shadow-none md:flex md:flex-row md:w-auto md:gap-x-6 lg:flex lg:flex-row lg:w-auto lg:gap-x-6"}>
+              <li className="transition duration-1000 hover:text-slate-400 leading-snug h-6 text-center">
                 <NavLink end to='/' className={({ isActive }) =>
                   isActive ? "text-slate-800" : "undefined"
                 }

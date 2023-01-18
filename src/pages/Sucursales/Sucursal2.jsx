@@ -64,7 +64,7 @@ export const Sucursal2 = () => {
                 <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
                   <div className="carousel-item active relative float-left w-full">
                     <img
-                      src="./src/assets/Logo2.png"
+                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                       className="block w-full"
                       alt="..."
                     />
@@ -74,7 +74,7 @@ export const Sucursal2 = () => {
                   </div>
                   <div className="carousel-item relative float-left w-full">
                     <img
-                      src="./src/assets/Logo2.png"
+                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                       className="block w-full"
                       alt="..."
                     />
@@ -128,7 +128,7 @@ export const Sucursal2 = () => {
                   <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
                     <div className="carousel-item active relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -138,7 +138,7 @@ export const Sucursal2 = () => {
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -205,7 +205,7 @@ export const Sucursal2 = () => {
                   <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
                     <div className="carousel-item active relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -215,7 +215,7 @@ export const Sucursal2 = () => {
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -281,7 +281,7 @@ export const Sucursal2 = () => {
                   <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
                     <div className="carousel-item active relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -291,7 +291,7 @@ export const Sucursal2 = () => {
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -353,7 +353,7 @@ export const Sucursal2 = () => {
                   <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
                     <div className="carousel-item active relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -363,7 +363,7 @@ export const Sucursal2 = () => {
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -433,7 +433,7 @@ export const Sucursal2 = () => {
                   <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
                     <div className="carousel-item active relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -443,7 +443,7 @@ export const Sucursal2 = () => {
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -508,7 +508,7 @@ export const Sucursal2 = () => {
                   <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
                     <div className="carousel-item active relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
@@ -518,7 +518,7 @@ export const Sucursal2 = () => {
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
-                        src="./src/assets/Logo2.png"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
                         className="block w-full"
                         alt="..."
                       />
