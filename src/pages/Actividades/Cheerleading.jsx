@@ -39,7 +39,7 @@ export const Cheerleading = () => {
               <p className="italic">
                 Edad de 6 a 16 años
               </p>
-              <img src="./src/assets/Logo2.png" alt="..." />
+              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg" alt="..." />
               <p className="text-justify">
                 Para niños y niñas que desean aprender o que ya cuenten con experiencia.
               </p>
@@ -51,7 +51,7 @@ export const Cheerleading = () => {
               <p className="italic">
                 Edad de 15 a 25 años
               </p>
-              <img src="./src/assets/Logo2.png" alt="..." />
+              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg" alt="..." />
               <p className="text-justify">
                 Para niñas nuevas que desean aprender o que ya cuenten con experiencia.
               </p>
@@ -63,7 +63,7 @@ export const Cheerleading = () => {
               <p className="italic">
                 Edad desde 15 años en adelante
               </p>
-              <img src="./src/assets/Logo2.png" alt="..." />
+              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg" alt="..." />
               <p className="text-justify">
                 Para personas que desean aprender o que ya cuenten con experiencia.
               </p>

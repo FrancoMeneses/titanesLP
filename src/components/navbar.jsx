@@ -11,7 +11,7 @@ export const Navbar = () => {
       <nav className="container min-w-full bg-[#9e0404] text-slate-100 h-20">
         <div className="flex flex-row h-full w-full justify-between items-center px-4 flex-wrap md:flex-nowrap lg:flex-nowrap">
           <NavLink to="/" onClick={() => setNavbarOpen(false)}>
-            <img src="src/assets/Logo1.png" className="w-16 h-16" alt="Titanes All-Stars Logo" />
+            <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674072102/titanes/Landing%20Page/Logo1.png" className="w-16 h-16" alt="Titanes All-Stars Logo" />
           </NavLink>
           <button className="md:hidden lg:hidden" onClick={() => { setNavbarOpen(!navbarOpen) }}>
             <VscMenu className="text-4xl"></VscMenu>
