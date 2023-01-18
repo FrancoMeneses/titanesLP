@@ -4,7 +4,7 @@ export const Sucursal1 = () => {
   return (
     <div>
       <Header id='p-f-suc1' title='SUCURSAL 1'></Header>
-      <div id="s1-info-suc2" className="px-5 md:px-10 lg:px-16 text-center flex flex-col justify-center items-center gap-y-6">
+      <div id="s1-info-suc1" className="px-5 md:px-10 lg:px-16 text-center flex flex-col justify-center items-center gap-y-6">
         <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
           <div className="flex flex-col gap-y-4 mt-4">
             <p className="text-2xl font-semibold">Dirección</p>
@@ -38,7 +38,7 @@ export const Sucursal1 = () => {
           </div>
         </div>
       </div>
-      <div id="s2-images" className="mt-8">
+      <div id="s2-images" className="mt-8 px-5 md:px-10 lg:px-16">
         <div className="w-full px-4 h-1 bg-slate-500 rounded opacity-50 mb-6"></div>
         <p className="text-2xl font-semibold text-center mb-6">Instalaciones</p>
         <div>

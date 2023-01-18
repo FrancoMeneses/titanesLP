@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, ScrollRestoration } from "react-router-dom"
 import { useState } from "react"
 import { VscChevronDown, VscMenu } from "react-icons/vsc";
 
@@ -36,7 +36,7 @@ export const Navbar = () => {
                     <VscChevronDown id="smS-svg" className="self-center" />
                   </div>
                 </button>
-                <ul className="hidden group-hover/suc:block group-hover/suc:absolute group-hover/suc:text-start group-hover/suc:bg-white group-hover/suc:text-slate-600 group-hover/suc:shadow group-hover/suc:border group-hover/suc:border-black">
+                <ul className="hidden group-hover/suc:block group-hover/suc:absolute group-hover/suc:text-start group-hover/suc:w-24 group-hover/suc:bg-white group-hover/suc:text-slate-600 group-hover/suc:shadow group-hover/suc:border group-hover/suc:border-black">
                   <li className="my-1 transition duration-300 hover:text-slate-400 leading-snug">
                     <NavLink end to='/sucursal1'
                       className={({ isActive }) =>
@@ -106,6 +106,7 @@ export const Navbar = () => {
           </div>
         </div>
       </nav>
+      <ScrollRestoration />
     </div>
   )
 }

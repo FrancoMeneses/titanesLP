@@ -1,44 +1,51 @@
 import { Header } from "../components/header"
-import { BsWhatsapp, BsInstagram, BsFacebook } from "react-icons/bs";
-import 'tw-elements';
+import { BsWhatsapp, BsInstagram, BsFacebook } from "react-icons/bs"
+import 'tw-elements'
 
 export const Inicio = () => {
 
   return (
     <div>
       <Header id='p-f-home' title="TITANES ALL-STARS" />
-      <div id="banner" className="text-center text-[44px] my-4  font-bold">
+      <div id="banner" className="text-center text-[44px] my-8  font-bold">
         <p>¡Unete al equipo!</p>
       </div>
       <div className="px-5 md:px-10 lg:px-16">
-        <div id="s-1">
-          <p className="text-center text-4xl mt-8 mb-3 font-bold">
-            ¿Por qué entrenar con nosotros?
-          </p>
-          <p className="text-justify text-xl mt-5">
-            Llevamos <strong>más de 7 años</strong> en el deporte formando atletas de alto rendimiento que han destacado en competencias nacionales e internacionales.
-          </p>
-          <p className="text-justify text-xl mt-5">
-            Ofrecemos deportes recreativos y formativos con instalaciones seguras para la práctica del deporte y  con entrenadores capacitados y certificados.
-          </p>
-          <p className="text-center text-4xl mt-8 mb-3 font-bold">
-            Uso de instalaciones
-          </p>
-          <p className="text-justify text-xl mt-5 ">
-            Nuestras instalaciones están <strong>abiertas a todo público</strong> para la práctica de algún deporte o actividad de forma individual o grupal.
-            No requieres estar inscrito en la academia para visitarnos en los <strong>OPEN GYM</strong> que tenemos para ir a practicar por horas tu estilo libre.
-          </p>
-          <p className="text-center text-4xl mt-8 mb-3 font-bold">
-            Entrenamiento a grupos externos
-          </p>
-          <p className="text-justify text-xl mt-5">
-            Si deseas aprender <strong>acrobacias</strong> o <strong>gimnasia</strong> de piso para complementar algún deporte que practicas puedes contactarnos,
-            hemos tenido grupos de <strong>taekwondo</strong> donde reforzamos la parte acrobática para sus competencias de estilo libre, asi como otros deportes.
-          </p>
+        <div id="s-1" className="flex flex-col gap-y-8">
+          <div>
+            <p className="text-center text-4xl mt-8 mb-3 font-bold">
+              ¿Por qué entrenar con nosotros?
+            </p>
+            <p className="text-justify text-xl mt-5">
+              Llevamos <strong>más de 7 años</strong> en el deporte formando atletas de alto rendimiento que han destacado en competencias nacionales e internacionales.
+            </p>
+            <p className="text-justify text-xl mt-5">
+              Ofrecemos deportes recreativos y formativos con instalaciones seguras para la práctica del deporte y  con entrenadores capacitados y certificados.
+            </p>
+          </div>
+          <div>
+            <p className="text-center text-4xl mt-8 mb-3 font-bold">
+              Uso de instalaciones
+            </p>
+            <p className="text-justify text-xl mt-5 ">
+              Nuestras instalaciones están <strong>abiertas a todo público</strong> para la práctica de algún deporte o actividad de forma individual o grupal.
+              No requieres estar inscrito en la academia para visitarnos en los <strong>OPEN GYM</strong> que tenemos para ir a practicar por horas tu estilo libre.
+            </p>
+          </div>
+          <div>
+            <p className="text-center text-4xl mt-8 mb-3 font-bold">
+              Entrenamiento a grupos externos
+            </p>
+            <p className="text-justify text-xl mt-5">
+              Si deseas aprender <strong>acrobacias</strong> o <strong>gimnasia</strong> de piso para complementar algún deporte que practicas puedes contactarnos,
+              hemos tenido grupos de <strong>taekwondo</strong> donde reforzamos la parte acrobática para sus competencias de estilo libre, asi como otros deportes.
+            </p>
+          </div>
         </div>
+        <div className="w-full h-1 bg-slate-500 rounded opacity-50 my-12"></div>
         <div id="s-2" className="flex flex-col items-center">
           <div>
-            <p className="text-center text-4xl mt-8 mb-12 font-bold">
+            <p className="text-center text-4xl mb-12 font-bold">
               Contamos con dos sucursales
             </p>
           </div>
@@ -127,7 +134,8 @@ export const Inicio = () => {
               {/* <--End Carousel Sucursal 1--> */}
             </div>
           </div>
-          <div className="text-center flex flex-col items-center gap-y-4 mt-8">
+          <div className="w-full h-1 bg-slate-500 rounded opacity-50 my-12"></div>
+          <div className="text-center flex flex-col items-center gap-y-4">
             <p className="text-3xl font-semibold mb-6">
               Sucursal 2
               (sobre Zavaleta)
@@ -277,9 +285,10 @@ export const Inicio = () => {
             </div>
           </div>
         </div>
+        <div className="w-full h-1 bg-slate-500 rounded opacity-50 my-12"></div>
         <div id="s-3">
           <div className="flex flex-col justify-center">
-            <p className="text-center text-3xl mt-8 mb-3 font-bold">Agenda tu clase muestra</p>
+            <p className="text-center text-3xl mb-3 font-bold">Agenda tu clase muestra</p>
             <p className="text-justify text-xl mt-5">
               <strong>Inscripciones abiertas durante todo el año</strong>, puedes agendar tu clase muestra
               para conocer sobre el deporte o si deseas puedes inscribirte directamente a la academia.
@@ -291,18 +300,6 @@ export const Inicio = () => {
               <p className="font-semibold">¡Escríbenos!</p>
               <BsWhatsapp className="w-10 h-10"></BsWhatsapp>
             </a>
-          </div>
-          <div className="flex flex-col gap-y-6">
-            <p className="text-3xl font-semibold text-center">Síguenos en nuestras redes sociales</p>
-            <div className="flex justify-center gap-x-8">
-              {/* <a className="transition ease-in duration-300 text-black hover:-translate-y-1 hover:scale-110 hover:text-rose-900" href="https://www.instagram.com/titanespueblaallstars/" target="_blank" rel="noopener noreferrer"> */}
-              <a className="flex justify-center items-center transition ease-in duration-300 w-14 h-14 hover:bg-gradient-to-b text-black hover:rounded-full hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-white hover:-translate-y-1 hover:scale-110" href="https://www.instagram.com/titanespueblaallstars/" target="_blank" rel="noopener noreferrer">
-                <BsInstagram className="w-10 h-10"></BsInstagram>
-              </a>
-              <a className="flex justify-center items-center w-14 h-14 transition ease-in duration-300 text-black hover:-translate-y-1 hover:scale-110 hover:text-blue-700" href="https://www.facebook.com/TitanesPueblaallstars/" target="_blank" rel="noopener noreferrer">
-                <BsFacebook className="w-10 h-10"></BsFacebook>
-              </a>
-            </div>
           </div>
         </div>
       </div>

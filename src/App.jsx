@@ -5,11 +5,11 @@ import { Navbar } from './components/navbar'
 
 const HeaderLayout = () => {
   return(
-    <>
+    <div className="font-display">
     <Navbar/>
       <Outlet/>
     <Footer/>
-    </>
+    </div>
   )
 }
 
