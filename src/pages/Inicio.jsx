@@ -5,13 +5,33 @@ import 'tw-elements'
 export const Inicio = () => {
 
   return (
-    <div>
+    <main>
       <Header id='p-f-home' title="TITANES ALL-STARS" />
-      <div id="banner" className="text-center text-[44px] my-8  font-bold">
-        <p>¡Unete al equipo!</p>
-      </div>
-      <div className="px-5 md:px-10 lg:px-16">
-        <div id="s-1" className="flex flex-col gap-y-8">
+      <section className="bg-[#1e1e1e] flex flex-col justify-center items-center text-white">
+        <p className="font-semibold text-lg text-center w-[80%] mt-6">Lorem Ipsum Ipsum Ipsum Ipsum</p>
+        {/* <div className="grid grid-cols-2 grid-rows-2 gap-0 justify-items-center content-center place-content-stretch h-auto">
+          <img src="src/assets/mixto_header.jpeg" className="col-start-1 row-span-2 object-contain rounded-lg border border-white h-auto" />
+          <img src="src/assets/mixto_header4.jpeg" className="row-start-1 col-start-2 object-contain rounded-lg border border-white" />
+          <img src="src/assets/mixto_header3.jpeg" className="row-start-2 col-start-2 object-contain rounded-lg border border-white place-self-end" />
+        </div> */}
+        <div className="w-full h-[500px] my-8">
+          <div className="w-full h-full relative">
+            {/* <img src="src/assets/mixto_header.jpeg" className="absolute right-0 bottom-0 h-[190px] object-contain rounded-lg border border-red-600" /> */}
+            <img src="src/assets/mixto_header2.jpeg" className="absolute h-[280px] bottom-0 left-0 object-contain rounded-lg border-2 border-lime-500" />
+            <img src="src/assets/mixto_header3.jpeg" className="absolute right-0 top-36 h-[170px] object-contain rounded-lg border-2 border-sky-400" />
+            <img src="src/assets/mixto_header4.jpeg" className="absolute h-[160px] object-contain rounded-lg border-2 border-yellow-300" />
+
+            {/* <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674856412/titanes/Landing%20Page/mixto_header4.png" alt="cheerleading 1" className="absolute h-[280px] bottom-0 left-0 object-contain rounded-lg border-2 border-lime-500" />
+            <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674856412/titanes/Landing%20Page/mixto_header3.png" alt="cheerleading 2" className="absolute right-0 top-36 h-[170px] object-contain rounded-lg border-2 border-sky-400" />
+            <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674856412/titanes/Landing%20Page/mixto_header.png" alt="cheerleading 3" className="absolute h-[160px] object-contain rounded-lg border-2 border-yellow-300" /> */}
+          </div>
+        </div>
+      </section>
+      <section className="w-full h-full border text-black">
+        <div id="s-1" className="px-5 md:px-10 lg:px-16 flex flex-col gap-y-8">
+          <div id="banner" className="text-center text-[44px] my-8  font-bold">
+            <p>¡Unete al equipo!</p>
+          </div>
           <div>
             <p className="text-center text-4xl mt-8 mb-3 font-bold">
               ¿Por qué entrenar con nosotros?
@@ -42,8 +62,10 @@ export const Inicio = () => {
             </p>
           </div>
         </div>
-        <div className="w-full h-1 bg-slate-500 rounded opacity-50 my-12"></div>
-        <div id="s-2" className="flex flex-col items-center">
+      </section>
+      <div className="w-full h-1 bg-slate-500 rounded opacity-50 my-12"></div>
+      <section>
+        <div id="s-2" className="px-5 md:px-10 lg:px-16 flex flex-col items-center">
           <div>
             <p className="text-center text-4xl mb-12 font-bold">
               Contamos con dos sucursales
@@ -285,8 +307,10 @@ export const Inicio = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-1 bg-slate-500 rounded opacity-50 my-12"></div>
-        <div id="s-3">
+      </section>
+      <div className="w-full h-1 bg-slate-500 rounded opacity-50 my-12"></div>
+      <section>
+        <div id="s-3" className="px-5 md:px-10 lg:px-16">
           <div className="flex flex-col justify-center">
             <p className="text-center text-3xl mb-3 font-bold">Agenda tu clase muestra</p>
             <p className="text-justify text-xl mt-5">
@@ -301,7 +325,7 @@ export const Inicio = () => {
             </a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

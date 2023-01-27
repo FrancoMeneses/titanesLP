@@ -9,9 +9,11 @@ export const Header = ({id, title}) => {
 
   return (
     <div>
-      <div className="flex justify-center items-center w-full h-40 bg-gradient-to-b from-[#9e0404] to-[#323232]">
+      <div className="flex justify-center items-center w-full h-36 bg-gradient-to-b from-[#b00000] to-[#1e1e1e]">
         <p id={id} className="text-center text-transparent text-4xl md:text-6xl lg:text-6xl self-start">{title}</p>
       </div>
     </div>
   )
+
+  // linear-gradient(to bottom, #ff0000, #000000, #ffffff)
 }
