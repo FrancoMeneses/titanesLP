@@ -306,7 +306,7 @@ export const Inicio = () => {
               </p>
             </div>
             <div className="w-full flex justify-center my-8">
-              <a className="flex flex-row justify-between items-center w-48 rounded-full border border-black border-solid p-3 transition duration-300 leading-snug hover:bg-[#25d366] hover:text-white" href="https://wa.me/2227080520?text=Quiero%20agendar%20mi%20clase%20muestra">
+              <a className="flex flex-row justify-between items-center w-48 rounded-full border border-white border-solid p-3 transition duration-300 leading-snug hover:bg-[#25d366] hover:text-white" href="https://wa.me/2227080520?text=Quiero%20agendar%20mi%20clase%20muestra">
                 <p className="font-semibold">¡Escríbenos!</p>
                 <BsWhatsapp className="w-10 h-10"></BsWhatsapp>
               </a>
