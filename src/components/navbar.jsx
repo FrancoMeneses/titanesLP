@@ -7,9 +7,9 @@ export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <div className="w-full sticky z-10 top-0">
+    <div className="w-full sticky z-10 top-0 h-20">
       {/* <nav className="container min-w-full bg-[#9e0404] text-slate-100 h-20"> */}
-      <nav className="container min-w-full bg-[#b00000] text-[#ffffff] h-20">
+      <nav className="container min-w-full bg-[#b00000] text-[#ffffff] py-2">
         <div className="flex flex-row h-full w-full justify-between items-center px-4 flex-wrap md:flex-nowrap lg:flex-nowrap">
           <NavLink to="/" onClick={() => setNavbarOpen(false)}>
             <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674072102/titanes/Landing%20Page/Logo1.png" className="w-16 h-16" alt="Titanes All-Stars Logo" />
@@ -19,9 +19,9 @@ export const Navbar = () => {
           </button>
           <div className={
             "w-full md:w-auto lg:w-auto lg:flex lg:flex-row md:flex md:flex-row" +
-            (navbarOpen ? "transition-all duration-300 ease-in-out bg-neutral-700" : " hidden")
-            }>
-            <ul className={"flex flex-col justify-center items-center w-auto h-auto border rounded md:border-transparent lg:border-transparent shadow md:shadow-none lg:shadow-none md:flex md:flex-row md:w-auto md:gap-x-6 lg:flex lg:flex-row lg:w-auto lg:gap-x-6"}>
+            (navbarOpen ? "transition-all duration-300 ease-in-out relative" : " hidden")
+          }>
+            <ul className={"bg-neutral-700 w-full absolute flex top-0 flex-col justify-center items-center border rounded md:bg-transparent md:static md:border-transparent lg:bg-transparent lg:static lg:border-transparent shadow md:shadow-none lg:shadow-none md:flex md:flex-row md:w-auto md:gap-x-6 lg:flex lg:flex-row lg:w-auto lg:gap-x-6"}>
               <li className="transition duration-1000 hover:text-[#c0c0c0] leading-snug h-6 text-center">
                 <NavLink end to='/' className={({ isActive }) =>
                   isActive ? "font-bold" : "undefined"
