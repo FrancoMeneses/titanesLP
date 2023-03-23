@@ -1,5 +1,5 @@
 import { Header } from "../components/header"
-import { BsWhatsapp} from "react-icons/bs"
+import { BsWhatsapp } from "react-icons/bs"
 import 'tw-elements'
 
 export const Inicio = () => {
@@ -12,9 +12,9 @@ export const Inicio = () => {
           <p className="font-semibold text-2xl text-center w-[80%] mt-6 lg:mt-0">¡Unete al equipo!</p>
           <div className="w-full h-[600px] my-8 md:my-0 lg:my-0">
             <div className="w-full h-full relative">
-              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674875258/titanes/Landing%20Page/mixto_header2.jpg" className="absolute h-[280px] bottom-0 left-0 object-contain rounded-lg border-2 border-white max-sm:left-[24%] max-sm:top-[20%] max-md:h-[360px] max-md:top-[19%] max-md:left-[33%] md:h-[320px] md:top-[23%] md:left-[33%] lg:h-[510px] lg:top-12 lg:left-[28%] 2xl:h-[600px] 2xl:top-0 2xl:left-[33%]" />
-              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674875258/titanes/Landing%20Page/mixto_header3.jpg" className="absolute right-0 bottom-0 h-[150px] object-contain rounded-lg border-2 border-white  max-sm:right-0 max-md:right-0 max-md:h-[180px] md:h-[150px] md:top-0 md:right-0 lg:h-[180px] lg:top-0" />
-              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674875258/titanes/Landing%20Page/mixto_header4.jpg" className="absolute h-[150px] object-contain rounded-lg border-2 border-white max-md:h-[180px] md:bottom-0 md:h-[150px] lg:h-[180px] lg:bottom-0 lg:left-0" />
+              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679604415/titanes/Landing%20Page/Actividades/Mini%20Gym/minigym1.jpg" className="absolute h-[280px] bottom-0 left-0 object-contain rounded-lg border-2 border-white max-sm:left-[24%] max-sm:top-[20%] max-md:h-[360px] max-md:top-[19%] max-md:left-[33%] md:h-[320px] md:top-[23%] md:left-[33%] lg:h-[510px] lg:top-12 lg:left-[28%] 2xl:h-[600px] 2xl:top-0 2xl:left-[33%]" />
+              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603031/titanes/Landing%20Page/Actividades/Parkour/_DSC2335.jpg" className="absolute right-0 bottom-0 h-[150px] object-contain rounded-lg border-2 border-white  max-sm:right-0 max-md:right-0 max-md:h-[180px] md:h-[150px] md:top-0 md:right-0 lg:h-[180px] lg:top-0" />
+              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674875258/titanes/Landing%20Page/mixto_header3.jpg" className="absolute h-[150px] object-contain rounded-lg border-2 border-white max-md:h-[180px] md:bottom-0 md:h-[150px] lg:h-[180px] lg:bottom-0 lg:left-0" />
             </div>
           </div>
         </section>
@@ -61,7 +61,7 @@ export const Inicio = () => {
             <div className="text-center flex flex-col items-center gap-y-4">
               <p className="text-3xl font-semibold">
                 Sucursal 1
-                (a lado de Cruz del Sur)
+                (a lado de plaza Cruz del Sur)
               </p>
               <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
                 <div className="flex flex-col gap-y-8">
@@ -80,9 +80,9 @@ export const Inicio = () => {
                 </div>
               </div>
               <div>
-                <p className="text-2xl font-semibold mb-4">Actividades en Sucursal 1</p>
+                <p className="text-2xl font-semibold mb-4">Instalaciones</p>
                 {/* <--Start Carousel Sucursal 1--> */}
-                <div id="carousel-inicio-sucursal1" className="carousel slide carousel-dark relative" data-bs-ride="carousel">
+                <div id="carousel-inicio-sucursal1" className="carousel slide carousel-white relative" data-bs-ride="carousel">
                   <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button
                       type="button"
@@ -98,27 +98,43 @@ export const Inicio = () => {
                       data-bs-slide-to="1"
                       aria-label="Slide 2"
                     ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal1"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
                   </div>
                   <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
                     <div className="carousel-item active relative float-left w-full">
                       <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                        className="block w-full"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0130.jpg"
+                        className="block w-[100%] h-[100%] object-scale-down"
                         alt="..."
                       />
-                      <div className="carousel-caption block absolute -top-6 text-center">
+                      {/* <div className="carousel-caption block absolute -top-6 text-center">
                         <h5 className="text-xl font-bold">Parkour</h5>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                        className="block w-full"
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0129.jpg"
+                        className="block w-[100%] h-[100%] object-scale-down"
                         alt="..."
                       />
-                      <div className="carousel-caption block absolute -top-6 text-center">
+                      {/* <div className="carousel-caption block absolute -top-6 text-center">
                         <h5 className="text-xl font-bold">Mini Gym</h5>
-                      </div>
+                      </div> */}
+                    </div>
+                    <div className="carousel-item relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0128.jpg"
+                        className="block w-[100%] h-[100%] object-scale-down"
+                        alt="..."
+                      />
+                      {/* <div className="carousel-caption block absolute -top-6 text-center">
+                        <h5 className="text-xl font-bold">Otro</h5>
+                      </div> */}
                     </div>
                   </div>
                   <button
@@ -141,158 +157,228 @@ export const Inicio = () => {
                   </button>
                 </div>
                 {/* <--End Carousel Sucursal 1--> */}
+                {/* <p className="text-2xl font-semibold mb-4">Actividades en Sucursal 1</p> */}
+                {/* <--Start Carousel Sucursal 1--> */}
+                {/* <div id="carousel-inicio-sucursal1" className="carousel slide carousel-dark relative" data-bs-ride="carousel">
+                  <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal1"
+                      data-bs-slide-to="0"
+                      className="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal1"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal1"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div className="carousel-inner relative w-full overflow-hidden md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
+                    <div className="carousel-item active relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679525742/titanes/Landing%20Page/Sucursal1/_PIC0130.jpg"
+                        className="block w-[100%] h-[100%] object-scale-down"
+                        alt="..."
+                      />
+                    </div>
+                    <div className="carousel-item active relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679525742/titanes/Landing%20Page/Sucursal1/_PIC0129.jpg"
+                        className="block w-[100%] h-[100%] object-scale-down"
+                        alt="..."
+                      />
+                    </div>
+                    <div className="carousel-item active relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679525742/titanes/Landing%20Page/Sucursal1/_PIC0128.jpg"
+                        className="block w-[100%] h-[100%] object-scale-down"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                    type="button"
+                    data-bs-target="#carousel-inicio-sucursal1"
+                    data-bs-slide="prev"
+                  >
+                    <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                    type="button"
+                    data-bs-target="#carousel-inicio-sucursal1"
+                    data-bs-slide="next"
+                  >
+                    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                  </button>
+                </div> */}
+                {/* <--End Carousel Sucursal 1--> */}
               </div>
             </div>
           </div>
         </section>
         <section className="w-full h-full py-5 text-[#1e1e1e]">
-          <div className="text-center flex flex-col items-center gap-y-4">
-            <p className="text-3xl font-semibold mb-6">
-              Sucursal 2
-              (sobre Zavaleta)
-            </p>
-            <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
-              <div className="flex flex-col gap-y-8">
-                <div className="flex flex-col gap-y-3">
-                  <p className="text-xl font-semibold">Dirección</p>
-                  <p className="text-xl">Calzada Zavaleta, Número 3708-1, Colonia Santa Cruz Buenavista, C.P. 72150 Puebla, Pue.</p>
+          <div className="px-5 md:px-10 lg:px-16 flex flex-col items-center">
+            <div className="text-center flex flex-col items-center gap-y-4">
+              <p className="text-3xl font-semibold mb-6">
+                Sucursal 2
+                (sobre Zavaleta)
+              </p>
+              <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
+                <div className="flex flex-col gap-y-8">
+                  <div className="flex flex-col gap-y-3">
+                    <p className="text-xl font-semibold">Dirección</p>
+                    <p className="text-xl">Calzada Zavaleta, Número 3708-1, Colonia Santa Cruz Buenavista, C.P. 72150 Puebla, Pue.</p>
+                  </div>
+                  <div className="flex flex-col gap-y-3">
+                    <p className="text-xl font-semibold">Horario de atención</p>
+                    <p className="text-xl">Martes a viernes de 4:00 pm a 7:30 pm</p>
+                    <p className="text-xl">Sábados de 9:00 am a 11:30 am</p>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-y-3">
-                  <p className="text-xl font-semibold">Horario de atención</p>
-                  <p className="text-xl">Martes a viernes de 4:00 pm a 7:30 pm</p>
-                  <p className="text-xl">Sábados de 9:00 am a 11:30 am</p>
+                <div className="my-4">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
-              <div className="my-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-            <div>
-              <p className="text-2xl font-semibold mb-4">Actividades en Sucursal 2</p>
-              {/* <--Start Carousel Sucursal 2--> */}
-              <div id="carousel-inicio-sucursal2" className="carousel slide carousel-dark relative" data-bs-ride="carousel">
-                <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+              <div>
+                <p className="text-2xl font-semibold mb-4">Actividades en Sucursal 2</p>
+                {/* <--Start Carousel Sucursal 2--> */}
+                <div id="carousel-inicio-sucursal2" className="carousel slide carousel-dark relative" data-bs-ride="carousel">
+                  <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal2"
+                      data-bs-slide-to="0"
+                      className="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal2"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal2"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal2"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 4"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal2"
+                      data-bs-slide-to="4"
+                      aria-label="Slide 5"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-inicio-sucursal2"
+                      data-bs-slide-to="5"
+                      aria-label="Slide 6"
+                    ></button>
+                  </div>
+                  <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
+                    <div className="carousel-item active relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
+                        className="block w-full"
+                        alt="..."
+                      />
+                      <div className="carousel-caption block absolute -top-6 text-center">
+                        <h5 className="text-xl font-bold">Cheerleading</h5>
+                      </div>
+                    </div>
+                    <div className="carousel-item relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
+                        className="block w-full"
+                        alt="..."
+                      />
+                      <div className="carousel-caption block absolute -top-6 text-center">
+                        <h5 className="text-xl font-bold">Parkour</h5>
+                      </div>
+                    </div>
+                    <div className="carousel-item relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
+                        className="block w-full"
+                        alt="..."
+                      />
+                      <div className="carousel-caption block absolute -top-6 text-center">
+                        <h5 className="text-xl font-bold">Gimnasia Femenil</h5>
+                      </div>
+                    </div>
+                    <div className="carousel-item relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
+                        className="block w-full"
+                        alt="..."
+                      />
+                      <div className="carousel-caption block absolute -top-6 text-center">
+                        <h5 className="text-xl font-bold">Gimnasia Varonil</h5>
+                      </div>
+                    </div>
+                    <div className="carousel-item relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
+                        className="block w-full"
+                        alt="..."
+                      />
+                      <div className="carousel-caption block absolute -top-6 text-center">
+                        <h5 className="text-xl font-bold">Acrobacia</h5>
+                      </div>
+                    </div>
+                    <div className="carousel-item relative float-left w-full">
+                      <img
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
+                        className="block w-full"
+                        alt="..."
+                      />
+                      <div className="carousel-caption block absolute -top-6 text-center">
+                        <h5 className="text-xl font-bold">Mini Gym</h5>
+                      </div>
+                    </div>
+                  </div>
                   <button
+                    className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
                     type="button"
                     data-bs-target="#carousel-inicio-sucursal2"
-                    data-bs-slide-to="0"
-                    className="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
+                    data-bs-slide="prev"
+                  >
+                    <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                  </button>
                   <button
+                    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
                     type="button"
                     data-bs-target="#carousel-inicio-sucursal2"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal2"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal2"
-                    data-bs-slide-to="3"
-                    aria-label="Slide 4"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal2"
-                    data-bs-slide-to="4"
-                    aria-label="Slide 5"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal2"
-                    data-bs-slide-to="5"
-                    aria-label="Slide 6"
-                  ></button>
+                    data-bs-slide="next"
+                  >
+                    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
-                  <div className="carousel-item active relative float-left w-full">
-                    <img
-                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                      className="block w-full"
-                      alt="..."
-                    />
-                    <div className="carousel-caption block absolute -top-6 text-center">
-                      <h5 className="text-xl font-bold">Cheerleading</h5>
-                    </div>
-                  </div>
-                  <div className="carousel-item relative float-left w-full">
-                    <img
-                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                      className="block w-full"
-                      alt="..."
-                    />
-                    <div className="carousel-caption block absolute -top-6 text-center">
-                      <h5 className="text-xl font-bold">Parkour</h5>
-                    </div>
-                  </div>
-                  <div className="carousel-item relative float-left w-full">
-                    <img
-                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                      className="block w-full"
-                      alt="..."
-                    />
-                    <div className="carousel-caption block absolute -top-6 text-center">
-                      <h5 className="text-xl font-bold">Gimnasia Femenil</h5>
-                    </div>
-                  </div>
-                  <div className="carousel-item relative float-left w-full">
-                    <img
-                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                      className="block w-full"
-                      alt="..."
-                    />
-                    <div className="carousel-caption block absolute -top-6 text-center">
-                      <h5 className="text-xl font-bold">Gimnasia Varonil</h5>
-                    </div>
-                  </div>
-                  <div className="carousel-item relative float-left w-full">
-                    <img
-                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                      className="block w-full"
-                      alt="..."
-                    />
-                    <div className="carousel-caption block absolute -top-6 text-center">
-                      <h5 className="text-xl font-bold">Acrobacia</h5>
-                    </div>
-                  </div>
-                  <div className="carousel-item relative float-left w-full">
-                    <img
-                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                      className="block w-full"
-                      alt="..."
-                    />
-                    <div className="carousel-caption block absolute -top-6 text-center">
-                      <h5 className="text-xl font-bold">Mini Gym</h5>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                  type="button"
-                  data-bs-target="#carousel-inicio-sucursal2"
-                  data-bs-slide="prev"
-                >
-                  <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-                <button
-                  className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                  type="button"
-                  data-bs-target="#carousel-inicio-sucursal2"
-                  data-bs-slide="next"
-                >
-                  <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
+                {/* <--End Carousel Sucursal 2--> */}
               </div>
-              {/* <--End Carousel Sucursal 2--> */}
             </div>
           </div>
         </section>

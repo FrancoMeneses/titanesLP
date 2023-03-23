@@ -30,7 +30,7 @@ export const Navbar = () => {
                   Inicio
                 </NavLink>
               </li>
-              <li className="group/suc">
+              {/* <li className="group/suc">
                 <button id="butSuc">
                   <div id="div-smS" className="flex transition duration-300 hover:text-[#c0c0c0] leading-snug">
                     <span id="smS-span">Sucursales</span>
@@ -57,8 +57,8 @@ export const Navbar = () => {
                     </NavLink>
                   </li>
                 </ul>
-              </li>
-              <li className="group/act">
+              </li> */}
+              {/* <li className="group/act">
                 <button id="act-btn" className="transition duration-300 hover:text-[#c0c0c0] leading-snug">
                   <div className="flex">
                     <span id="span-act" className="">Actividades</span>
@@ -94,7 +94,7 @@ export const Navbar = () => {
                     </NavLink>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li className="transition duration-300 hover:text-[#c0c0c0] leading-snug h-6 text-center">
                 <NavLink end to='/aviso-privacidad' className={({ isActive }) =>
                   isActive ? "font-bold" : "undefined"
