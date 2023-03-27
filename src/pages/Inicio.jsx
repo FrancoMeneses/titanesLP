@@ -51,7 +51,7 @@ export const Inicio = () => {
             </div>
           </div>
         </section>
-        <section className="w-full h-full text-white bg-[#1e1e1e] py-5">
+        <section className="w-full h-full text-white bg-[#1e1e1e] py-12">
           <div id="s-2" className="px-5 md:px-10 lg:px-16 flex flex-col items-center">
             <div>
               <p className="text-center text-4xl mb-12 font-bold">
@@ -76,13 +76,16 @@ export const Inicio = () => {
                   </div>
                 </div>
                 <div className="my-4">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7992085668384!2d-98.25611880546826!3d19.072563849706892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6f297ee5555%3A0xe7ac5cc53565ad1f!2sTITANES%20PUEBLA%20ALL-STARS!5e0!3m2!1ses-419!2smx!4v1673897593961!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7992085668384!2d-98.25611880546826!3d19.072563849706892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6f297ee5555%3A0xe7ac5cc53565ad1f!2sTITANES%20PUEBLA%20ALL-STARS!5e0!3m2!1ses-419!2smx!4v1673897593961!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
               <div>
                 <p className="text-2xl font-semibold mb-4">Instalaciones</p>
+                <div className="flex justify-center items-center">
+                  <img className="rounded-md border lg:w-[80%] md:w-[80%]" src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0131.jpg" />
+                </div>
                 {/* <--Start Carousel Sucursal 1--> */}
-                <div id="carousel-inicio-sucursal1" className="carousel slide carousel-white relative" data-bs-ride="carousel">
+                {/* <div id="carousel-inicio-sucursal1" className="carousel slide carousel-white relative" data-bs-ride="carousel">
                   <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                     <button
                       type="button"
@@ -112,9 +115,9 @@ export const Inicio = () => {
                         className="block w-[100%] h-[100%] object-scale-down"
                         alt="..."
                       />
-                      {/* <div className="carousel-caption block absolute -top-6 text-center">
+                      <div className="carousel-caption block absolute -top-6 text-center">
                         <h5 className="text-xl font-bold">Parkour</h5>
-                      </div> */}
+                      </div>
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
@@ -122,9 +125,9 @@ export const Inicio = () => {
                         className="block w-[100%] h-[100%] object-scale-down"
                         alt="..."
                       />
-                      {/* <div className="carousel-caption block absolute -top-6 text-center">
+                      <div className="carousel-caption block absolute -top-6 text-center">
                         <h5 className="text-xl font-bold">Mini Gym</h5>
-                      </div> */}
+                      </div>
                     </div>
                     <div className="carousel-item relative float-left w-full">
                       <img
@@ -132,77 +135,9 @@ export const Inicio = () => {
                         className="block w-[100%] h-[100%] object-scale-down"
                         alt="..."
                       />
-                      {/* <div className="carousel-caption block absolute -top-6 text-center">
+                      <div className="carousel-caption block absolute -top-6 text-center">
                         <h5 className="text-xl font-bold">Otro</h5>
-                      </div> */}
-                    </div>
-                  </div>
-                  <button
-                    className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal1"
-                    data-bs-slide="prev"
-                  >
-                    <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal1"
-                    data-bs-slide="next"
-                  >
-                    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                  </button>
-                </div>
-                {/* <--End Carousel Sucursal 1--> */}
-                {/* <p className="text-2xl font-semibold mb-4">Actividades en Sucursal 1</p> */}
-                {/* <--Start Carousel Sucursal 1--> */}
-                {/* <div id="carousel-inicio-sucursal1" className="carousel slide carousel-dark relative" data-bs-ride="carousel">
-                  <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal1"
-                      data-bs-slide-to="0"
-                      className="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal1"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal1"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                  </div>
-                  <div className="carousel-inner relative w-full overflow-hidden md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
-                    <div className="carousel-item active relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679525742/titanes/Landing%20Page/Sucursal1/_PIC0130.jpg"
-                        className="block w-[100%] h-[100%] object-scale-down"
-                        alt="..."
-                      />
-                    </div>
-                    <div className="carousel-item active relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679525742/titanes/Landing%20Page/Sucursal1/_PIC0129.jpg"
-                        className="block w-[100%] h-[100%] object-scale-down"
-                        alt="..."
-                      />
-                    </div>
-                    <div className="carousel-item active relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679525742/titanes/Landing%20Page/Sucursal1/_PIC0128.jpg"
-                        className="block w-[100%] h-[100%] object-scale-down"
-                        alt="..."
-                      />
+                      </div>
                     </div>
                   </div>
                   <button
@@ -249,7 +184,7 @@ export const Inicio = () => {
                   </div>
                 </div>
                 <div className="my-4">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px]" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
               <div>
