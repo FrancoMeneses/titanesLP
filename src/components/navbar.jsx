@@ -30,14 +30,14 @@ export const Navbar = () => {
                   Inicio
                 </NavLink>
               </li>
-              {/* <li className="group/suc">
+              <li className="group/suc">
                 <button id="butSuc">
                   <div id="div-smS" className="flex transition duration-300 hover:text-[#c0c0c0] leading-snug">
                     <span id="smS-span">Sucursales</span>
                     <VscChevronDown id="smS-svg" className="self-center" />
                   </div>
                 </button>
-                <ul className="hidden text-black group-hover/suc:block group-hover/suc:absolute group-hover/suc:text-start group-hover/suc:w-24 group-hover/suc:bg-white group-hover/suc:text-slate-600 group-hover/suc:shadow group-hover/suc:border group-hover/suc:rounded-sm group-hover/suc:border-black">
+                <ul className="hidden text-black group-hover/suc:block group-hover/suc:absolute group-hover/suc:text-start group-hover/suc:w-[100px] group-hover/suc:bg-white group-hover/suc:text-slate-600 group-hover/suc:shadow group-hover/suc:border group-hover/suc:rounded-sm group-hover/suc:border-black">
                   <li className="my-1 transition duration-300 hover:text-[#c0c0c0] leading-snug">
                     <NavLink end to='/sucursal1'
                       className={({ isActive }) =>
@@ -57,7 +57,7 @@ export const Navbar = () => {
                     </NavLink>
                   </li>
                 </ul>
-              </li> */}
+              </li>
               {/* <li className="group/act">
                 <button id="act-btn" className="transition duration-300 hover:text-[#c0c0c0] leading-snug">
                   <div className="flex">
