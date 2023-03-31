@@ -151,11 +151,11 @@ export const Sucursal1 = () => {
       </div>
       <div id="s2-actividades-parkour1">
       <p className="text-3xl font-semibold text-center my-12">Parkour</p>
-        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-black" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
-        <div id="parkour2-suc1" className="my-8">
+        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
+        <div id="parkour2-suc1" className="my-8 px-5 md:px-10 lg:px-16">
           <p className="text-3xl font-semibold text-center my-12">Horarios</p>
-          <div className="flex flex-col md:flex-row md:jusitify-around md:w-full lg:flex-row lg:justify-around lg:w-full justify-center items-start">
-            <div className="text-center flex flex-col gap-y-6">
+          <div className="flex flex-col md:flex-row md:justify-between w-full lg:flex-row lg:justify-between justify-center items-center md:items-start lg:items-start text-center gap-8">
+            <div className="text-center flex flex-col gap-y-6 border-2 border-[#b00000] rounded-md h-[350px] w-[295px] p-10 justify-center md:justify-start">
               <p className="text-2xl font-semibold">6 a 14 años</p>
               <div className="flex flex-col gap-y-4">
                 <p className="text-xl font-semibold">Martes a viernes</p>
@@ -167,7 +167,7 @@ export const Sucursal1 = () => {
                 <p className="text-md">De 9:30 a 11:30</p>
               </div>
             </div>
-            <div className="text-center flex flex-col gap-y-6">
+            <div className="text-center flex flex-col gap-y-6 border-2 border-[#b00000] rounded-md h-[350px] w-[295px] p-10 justify-center md:justify-start">
               <p className="text-2xl font-semibold">15 a 20 años</p>
               <div className="flex flex-col gap-y-4">
                 <p className="text-xl font-semibold">Miércoles y viernes</p>
@@ -179,7 +179,7 @@ export const Sucursal1 = () => {
                 <p className="text-md">De 09:30 am a 11:30 am</p>
               </div>
             </div>
-            <div className="text-center flex flex-col gap-y-6">
+            <div className="text-center flex flex-col gap-y-6 border-2 border-[#b00000] rounded-md h-[350px] w-[295px] p-10 justify-center md:justify-start">
               <p className="text-2xl font-semibold">21 a 45 años</p>
               <div className="flex flex-col gap-y-4">
                 <p className="text-xl font-semibold">Miércoles y viernes</p>
@@ -271,7 +271,7 @@ export const Sucursal1 = () => {
           </div>
         </div>
       </div> */}
-      <div id="s2-ubicacion" className="mt-8 px-5 md:px-10 lg:px-16">
+      <div id="s2-ubicacion" className="my-8 px-5 md:px-10 lg:px-16">
       <div className="w-full px-4 h-1 bg-slate-500 rounded opacity-50 mb-6"></div>
       <p className="text-3xl font-semibold text-center mb-6">Ubicación</p>
       <div id="location" className="flex flex-col items-center justify-between gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
