@@ -1,5 +1,6 @@
 import { Navbar } from "./components/navbar"
 import { Footer } from "./components/footer"
+import { Whatsapp } from "./components/whatsapp"
 import { Inicio } from "./pages/Inicio"
 import { Sucursal1 } from "./pages/Sucursales/Sucursal1"
 import { Sucursal2 } from "./pages/Sucursales/Sucursal2"
@@ -10,6 +11,7 @@ import { Aviso } from "./pages/Aviso"
 
 export { Navbar }
 export { Footer }
+export { Whatsapp }
 export { Inicio }
 export { Sucursal1 }
 export { Sucursal2 }
