@@ -8,8 +8,8 @@ export const Inicio = () => {
     <main>
       <Header id='p-f-home' title="TITANES ALL-STARS" />
       <div className="flex flex-col gap-y-12">
-        <section className="bg-[#1e1e1e] flex flex-col md:flex-row lg:flex-row justify-center items-center text-white py-5">
-          <p className="font-semibold text-4xl text-center w-[80%] mt-6 lg:mt-0">¡Unete al equipo!</p>
+        <section className="flex flex-col md:flex-row lg:flex-row justify-center items-center py-5">
+          <p className="font-bold text-4xl text-center w-[80%] mt-6 lg:mt-0">¡Unete al equipo!</p>
           {/* <div className="w-full h-[600px] my-8 md:my-0 lg:my-0">
             <div className="w-full h-full relative">
               <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679604415/titanes/Landing%20Page/Actividades/Mini%20Gym/minigym1.jpg" className="absolute h-[280px] bottom-0 left-0 object-contain rounded-lg border-2 border-white max-sm:left-[24%] max-sm:top-[20%] max-md:h-[360px] max-md:top-[19%] max-md:left-[33%] md:h-[320px] md:top-[23%] md:left-[33%] lg:h-[510px] lg:top-12 lg:left-[28%] 2xl:h-[600px] 2xl:top-0 2xl:left-[33%]" />
