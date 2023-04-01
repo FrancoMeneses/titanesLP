@@ -2,7 +2,7 @@ import { Header } from "../../components/header"
 
 export const Sucursal1 = () => {
   return (
-    <div>
+    <div className="bg-black text-white">
       <Header id='p-f-suc1' title='SUCURSAL 1'></Header>
       <div id="s1-info-suc1" className="px-5 md:px-10 lg:px-16 text-center flex flex-col justify-center items-center gap-y-6">
         <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
@@ -18,7 +18,7 @@ export const Sucursal1 = () => {
           <div id="s2-instalaciones" className="mt-8 px-5 md:px-10 lg:px-16">
             {/* <p className="text-3xl font-semibold text-center mb-6">Instalaciones</p> */}
             <div className="flex justify-center items-center">
-              <div id="carousel-sucursales-sucursal1" className="carousel slide carousel-dark relative" data-bs-ride="carousel">
+              <div id="carousel-sucursales-sucursal1" className="carousel slide carousel-white relative" data-bs-ride="carousel">
                 <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                   <button
                     type="button"
@@ -34,26 +34,42 @@ export const Sucursal1 = () => {
                     data-bs-slide-to="1"
                     aria-label="Slide 2"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-sucursales-sucursal1"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
-                <div className="carousel-inner relative w-full overflow-hidden  md:h-[350px] md:w-[350px] lg:h-[500px] lg:w-[500px]">
-                  <div className="carousel-item active relative float-left w-full">
+                <div className="carousel-inner relative w-full overflow-hidden md:max-h-[350px] lg:max-h-[350px] md:w-[350px] lg:w-[500px] md:border-zinc-300 md:border-2 rounded-md">
+                  <div className="carousel-item active relative float-left w-full h-full">
                     <img
-                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                      className="block w-full"
+                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/cama.jpg"
+                      className="block w-full h-[350px] object-cover"
                       alt="..."
                     />
-                    <div className="carousel-caption block absolute -top-6 text-center">
-                      <h5 className="text-xl font-bold">Área de entrenamiento</h5>
+                    <div className="carousel-caption block absolute -top-4 text-center">
+                      <h5 className="text-xl font-bold text-white w-fit border border-zinc-300 rounded-md mx-auto px-2 backdrop-blur-md">Cama elástica</h5>
                     </div>
                   </div>
                   <div className="carousel-item relative float-left w-full">
                     <img
-                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                      className="block w-full"
+                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/piso.jpg"
+                      className="block w-full h-[350px] object-contain"
                       alt="..."
                     />
-                    <div className="carousel-caption block absolute -top-6 text-center">
-                      <h5 className="text-xl font-bold">Recepción</h5>
+                    <div className="carousel-caption block absolute -top-4 text-center">
+                      <h5 className="text-xl font-bold border border-zinc-300 text-white w-fit rounded-md mx-auto px-2 backdrop-blur-md">Piso</h5>
+                    </div>
+                  </div>
+                  <div className="carousel-item relative float-left w-full">
+                    <img
+                      src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311649/titanes/Landing%20Page/Sucursal1/spots.jpg"
+                      className="block w-full h-[350px] object-contain"
+                      alt="..."
+                    />
+                    <div className="carousel-caption block absolute -top-4 text-center">
+                      <h5 className="text-xl font-bold border border-zinc-300 text-white w-fit rounded-md mx-auto px-2 backdrop-blur-md">Spots</h5>
                     </div>
                   </div>
                 </div>
@@ -79,7 +95,7 @@ export const Sucursal1 = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-4 h-1 bg-slate-500 rounded opacity-50 mb-6"></div>
+        <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
       </div>
       {/* <div id="s1-info-suc1" className="px-5 md:px-10 lg:px-16 text-center flex flex-col justify-center items-center gap-y-6">
         <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
@@ -225,7 +241,7 @@ export const Sucursal1 = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-4 h-1 bg-slate-500 rounded opacity-50 mb-6"></div>
+        <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
       </div>
       <div id="s2-actividades-parkour1">
         <p className="text-3xl font-semibold text-center my-12">Parkour</p>
@@ -350,8 +366,8 @@ export const Sucursal1 = () => {
           </div>
         </div>
       </div> */}
-      <div id="s2-ubicacion" className="my-8 px-5 md:px-10 lg:px-16">
-        <div className="w-full px-4 h-1 bg-slate-500 rounded opacity-50 mb-6"></div>
+      <div id="s2-ubicacion" className="py-8 px-5 md:px-10 lg:px-16">
+        <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
         <p className="text-3xl font-semibold text-center mb-6">Ubicación</p>
         <div id="location" className="flex flex-col items-center justify-between gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
           <div className="flex flex-col gap-y-4 mt-4 text-center">
