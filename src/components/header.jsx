@@ -9,7 +9,8 @@ export const Header = ({id, title}) => {
 
   return (
     <div>
-      <div className="flex justify-center items-center w-full h-36 bg-gradient-to-b from-[#b00000] to-[#1e1e1e]">
+      {/* <div className="flex justify-center items-center w-full h-36 bg-gradient-to-b from-[#b00000] to-[#1e1e1e]"> */}
+      <div className="flex justify-center items-center w-full h-36 bg-gradient-to-b from-[#b00000] to-[#000000]">
         <p id={id} className="text-center text-transparent text-4xl md:text-6xl lg:text-6xl self-start">{title}</p>
       </div>
     </div>
