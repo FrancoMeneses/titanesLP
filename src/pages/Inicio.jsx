@@ -1,25 +1,193 @@
 import { Header } from "../components/header"
 import { BsWhatsapp } from "react-icons/bs"
 import 'tw-elements'
+import { BtnWhatsApp } from "../imports"
+import { NavLink } from "react-router-dom"
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { useContext } from "react"
+import { TitanesContext } from "../context/titanesContext"
 
 export const Inicio = () => {
+
+  const {handleModal} = useContext(TitanesContext)
 
   return (
     <main>
       <Header id='p-f-home' title="TITANES ALL-STARS" />
-      <div className="flex flex-col gap-y-12">
-        <section className="flex flex-col md:flex-row lg:flex-row justify-center items-center py-5">
-          <p className="font-bold text-4xl text-center w-[80%] mt-6 lg:mt-0">¡Unete al equipo!</p>
-          {/* <div className="w-full h-[600px] my-8 md:my-0 lg:my-0">
-            <div className="w-full h-full relative">
-              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679604415/titanes/Landing%20Page/Actividades/Mini%20Gym/minigym1.jpg" className="absolute h-[280px] bottom-0 left-0 object-contain rounded-lg border-2 border-white max-sm:left-[24%] max-sm:top-[20%] max-md:h-[360px] max-md:top-[19%] max-md:left-[33%] md:h-[320px] md:top-[23%] md:left-[33%] lg:h-[510px] lg:top-12 lg:left-[28%] 2xl:h-[600px] 2xl:top-0 2xl:left-[33%]" />
-              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603031/titanes/Landing%20Page/Actividades/Parkour/_DSC2335.jpg" className="absolute right-0 bottom-0 h-[150px] object-contain rounded-lg border-2 border-white  max-sm:right-0 max-md:right-0 max-md:h-[180px] md:h-[150px] md:top-0 md:right-0 lg:h-[180px] lg:top-0" />
-              <img src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674875258/titanes/Landing%20Page/mixto_header3.jpg" className="absolute h-[150px] object-contain rounded-lg border-2 border-white max-md:h-[180px] md:bottom-0 md:h-[150px] lg:h-[180px] lg:bottom-0 lg:left-0" />
-            </div>
-          </div> */}
+      <div className="flex flex-col bg-black text-white">
+        <section className="flex flex-col w-full justify-center items-center gap-6 px-5 md:px-10 lg:px-16 py-8">
+          <p className="font-bold text-4xl text-center w-[full]">¡Unete al equipo!</p>
+          <BtnWhatsApp />
+          <nav id="actividades-home" className="w-full flex flex-col gap-2 justify-center items-center">
+            <p className="w-full text-center font-semibold text-2xl">Actividades</p>
+            <ul className="w-full text-white flex flex-col md:bg-[#b00000] md:rounded-lg md:flex-row md:justify-center md:items-center md:gap-10 lg:w-[80%] lg:gap-16">
+              <li className="text-center h-[48px] bg-[#b00000] rounded-t-lg md:rounded-none md:border-none border border-white flex justify-center items-center underline md:no-underline md:hover:underline">
+                <NavLink to="#">
+                  Mini Gym
+                </NavLink>
+              </li>
+              <li className="text-center h-[48px] bg-[#b00000] md:border-none border-l border-r border-b border-white flex justify-center items-center underline md:no-underline md:hover:underline">
+                <NavLink to="#">
+                  Parkour
+                </NavLink>
+              </li>
+              <li className="text-center h-[48px] bg-[#b00000] md:border-none border-l border-r border-b border-white flex justify-center items-center underline md:no-underline md:hover:underline">
+                <NavLink to="#">
+                  Porristas
+                </NavLink>
+              </li>
+              <li className="text-center h-[48px] bg-[#b00000] rounded-b-lg md:rounded-none md:border-none border-l border-r border-b border-white flex justify-center items-center underline md:no-underline md:hover:underline">
+                <NavLink to="#">
+                  Gimnasia Femenil y Varonil
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
         </section>
-        <section className="w-full h-full text-[#1e1e1e] py-5">
-          <div id="s-1" className="px-5 md:px-10 lg:px-16 flex flex-col gap-y-8">
+        <section className="w-full h-full py-8">
+          <div id="s-2" className="px-5 md:px-10 lg:px-16 flex flex-col items-center">
+            {/* <div>
+              <p className="text-center text-4xl mb-12 font-bold">
+                Contamos con dos sucursales
+              </p>
+            </div> */}
+            <div className="text-center flex flex-col items-center gap-y-4">
+              <p className="text-3xl font-semibold">
+                Sucursal 1
+                <br />
+                Plaza Cruz del Sur
+              </p>
+              {/* <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
+                <div className="flex flex-col gap-y-8">
+                  <div className="flex flex-col gap-y-3">
+                    <p className="text-xl font-semibold">Dirección</p>
+                    <p className="text-xl">Calle Guadalajara, Número 47, Colonia Independencia, C.P. 72150 Puebla, Pue.</p>
+                  </div>
+                  <div className="flex flex-col gap-y-3">
+                    <p className="text-xl font-semibold">Horario de atención</p>
+                    <p className="text-xl">Martes a viernes de 4:00 pm a 6:30 pm</p>
+                    <p className="text-xl">Sábados de 9:30 am a 11:30 am</p>
+                  </div>
+                </div>
+                <div className="my-4">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7992085668384!2d-98.25611880546826!3d19.072563849706892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6f297ee5555%3A0xe7ac5cc53565ad1f!2sTITANES%20PUEBLA%20ALL-STARS!5e0!3m2!1ses-419!2smx!4v1673897593961!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div> */}
+              <div className="w-full h-full flex flex-col justify-center items-center gap-2">
+                <p className="text-2xl font-semibold mb-4">Instalaciones</p>
+                <div className="w-full h-full border border-white rounded-lg">
+                  <Carousel
+                    showThumbs={false}
+                    showStatus={false}
+                    infiniteLoop
+                    interval={3000}
+                    autoPlay
+                  >
+                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                      <img className="w-full h-full object-cover object-center rounded-lg"
+                        width={1600}
+                        height={1066}
+                        alt=""
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/cama.jpg"
+                      />
+                      {/* <p className="legend">Fosa</p> */}
+                    </div>
+                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                      <img className="w-full h-full object-cover object-center rounded-lg"
+                        width={1600}
+                        height={1066}
+                        alt=""
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311649/titanes/Landing%20Page/Sucursal1/spots.jpg" />
+                      {/* <p className="legend">Legend 2</p> */}
+                    </div>
+                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                      <img className="w-full h-full object-cover object-center rounded-lg"
+                        width={1600}
+                        height={1066}
+                        alt=""
+                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/piso.jpg" />
+                      {/* <p className="legend">Legend 3</p> */}
+                    </div>
+                  </Carousel>
+                </div>
+                <NavLink to='/sucursal1' className='w-[150px] h-fit rounded-full px-4 py-2 mt-[50px] bg-[#b00000] transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                  Ver más
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="w-full px-4 h-1 bg-slate-100 rounded my-6"></div>
+        <section className="w-full h-full text-white py-8 px-5 md:px-10 lg:px-16 flex flex-col items-center">
+          <div className="text-center flex flex-col items-center">
+            <p className="text-3xl font-semibold mb-6">
+              Sucursal 2
+              <br />
+              Calzada Zavaleta
+            </p>
+            {/* <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
+                <div className="flex flex-col gap-y-8">
+                  <div className="flex flex-col gap-y-3">
+                    <p className="text-xl font-semibold">Dirección</p>
+                    <p className="text-xl">Calzada Zavaleta, Número 3708-1, Colonia Santa Cruz Buenavista, C.P. 72150 Puebla, Pue.</p>
+                  </div>
+                  <div className="flex flex-col gap-y-3">
+                    <p className="text-xl font-semibold">Horario de atención</p>
+                    <p className="text-xl">Martes a viernes de 4:00 pm a 7:30 pm</p>
+                    <p className="text-xl">Sábados de 9:00 am a 11:30 am</p>
+                  </div>
+                </div>
+                <div className="my-4">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div> */}
+            <div className="w-full h-full flex flex-col justify-center items-center gap-2">
+              <p className="text-2xl font-semibold mb-4">Instalaciones</p>
+              <div className="w-full h-full border border-black rounded-lg">
+                <Carousel
+                  showThumbs={false}
+                  showStatus={false}
+                  infiniteLoop
+                  interval={3000}
+                  autoPlay
+                >
+                  <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                    <img className="w-full h-full object-cover object-center rounded-lg"
+                      width={1600}
+                      height={1066}
+                      alt=""
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/barra2_z6gha3.jpg"
+                    />
+                    {/* <p className="legend">Fosa</p> */}
+                  </div>
+                  <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                    <img className="w-full h-full object-cover object-center rounded-lg"
+                      width={1600}
+                      height={1066}
+                      alt=""
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/aros_t0ttwu.jpg" />
+                    {/* <p className="legend">Legend 2</p> */}
+                  </div>
+                  <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                    <img className="w-full h-full object-cover object-center rounded-lg"
+                      width={1600}
+                      height={1066}
+                      alt=""
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/barra1_p9iet4.jpg" />
+                    {/* <p className="legend">Legend 3</p> */}
+                  </div>
+                </Carousel>
+              </div>
+              <NavLink to='/sucursal2' className='w-[150px] text-white h-fit rounded-full px-4 py-2 mt-[50px] bg-[#b00000] transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                Ver más
+              </NavLink>
+            </div>
+          </div>
+        </section>
+        <div className="w-full px-4 h-1 bg-slate-100 rounded my-6"></div>
+        <section className="w-full h-full text-white py-8">
+          <div className="px-5 md:px-10 lg:px-16 flex flex-col gap-y-8">
             <div>
               <p className="text-center text-4xl mb-3 font-bold">
                 ¿Por qué entrenar con nosotros?
@@ -51,273 +219,8 @@ export const Inicio = () => {
             </div>
           </div>
         </section>
-        <section className="w-full h-full text-white bg-[#1e1e1e] py-12">
-          <div id="s-2" className="px-5 md:px-10 lg:px-16 flex flex-col items-center">
-            <div>
-              <p className="text-center text-4xl mb-12 font-bold">
-                Contamos con dos sucursales
-              </p>
-            </div>
-            <div className="text-center flex flex-col items-center gap-y-4">
-              <p className="text-3xl font-semibold">
-                Sucursal 1
-                (a lado de plaza Cruz del Sur)
-              </p>
-              <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
-                <div className="flex flex-col gap-y-8">
-                  <div className="flex flex-col gap-y-3">
-                    <p className="text-xl font-semibold">Dirección</p>
-                    <p className="text-xl">Calle Guadalajara, Número 47, Colonia Independencia, C.P. 72150 Puebla, Pue.</p>
-                  </div>
-                  <div className="flex flex-col gap-y-3">
-                    <p className="text-xl font-semibold">Horario de atención</p>
-                    <p className="text-xl">Martes a viernes de 4:00 pm a 6:30 pm</p>
-                    <p className="text-xl">Sábados de 9:30 am a 11:30 am</p>
-                  </div>
-                </div>
-                <div className="my-4">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7992085668384!2d-98.25611880546826!3d19.072563849706892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6f297ee5555%3A0xe7ac5cc53565ad1f!2sTITANES%20PUEBLA%20ALL-STARS!5e0!3m2!1ses-419!2smx!4v1673897593961!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div>
-              <div>
-                <p className="text-2xl font-semibold mb-4">Instalaciones</p>
-                <div className="flex justify-center items-center">
-                  <img className="rounded-md border lg:w-[80%] md:w-[80%]" src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0131.jpg" />
-                </div>
-                {/* <--Start Carousel Sucursal 1--> */}
-                {/* <div id="carousel-inicio-sucursal1" className="carousel slide carousel-white relative" data-bs-ride="carousel">
-                  <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal1"
-                      data-bs-slide-to="0"
-                      className="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal1"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal1"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                  </div>
-                  <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
-                    <div className="carousel-item active relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0130.jpg"
-                        className="block w-[100%] h-[100%] object-scale-down"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Parkour</h5>
-                      </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0129.jpg"
-                        className="block w-[100%] h-[100%] object-scale-down"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Mini Gym</h5>
-                      </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0128.jpg"
-                        className="block w-[100%] h-[100%] object-scale-down"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Otro</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal1"
-                    data-bs-slide="prev"
-                  >
-                    <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal1"
-                    data-bs-slide="next"
-                  >
-                    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                  </button>
-                </div> */}
-                {/* <--End Carousel Sucursal 1--> */}
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full h-full py-5 text-[#1e1e1e]">
-          <div className="px-5 md:px-10 lg:px-16 flex flex-col items-center">
-            <div className="text-center flex flex-col items-center gap-y-4">
-              <p className="text-3xl font-semibold mb-6">
-                Sucursal 2
-                (sobre Zavaleta)
-              </p>
-              <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
-                <div className="flex flex-col gap-y-8">
-                  <div className="flex flex-col gap-y-3">
-                    <p className="text-xl font-semibold">Dirección</p>
-                    <p className="text-xl">Calzada Zavaleta, Número 3708-1, Colonia Santa Cruz Buenavista, C.P. 72150 Puebla, Pue.</p>
-                  </div>
-                  <div className="flex flex-col gap-y-3">
-                    <p className="text-xl font-semibold">Horario de atención</p>
-                    <p className="text-xl">Martes a viernes de 4:00 pm a 7:30 pm</p>
-                    <p className="text-xl">Sábados de 9:00 am a 11:30 am</p>
-                  </div>
-                </div>
-                <div className="my-4">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div>
-              <div>
-                <p className="text-2xl font-semibold mb-4">Actividades en Sucursal 2</p>
-                {/* <--Start Carousel Sucursal 2--> */}
-                <div id="carousel-inicio-sucursal2" className="carousel slide carousel-dark relative" data-bs-ride="carousel">
-                  <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal2"
-                      data-bs-slide-to="0"
-                      className="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal2"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal2"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal2"
-                      data-bs-slide-to="3"
-                      aria-label="Slide 4"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal2"
-                      data-bs-slide-to="4"
-                      aria-label="Slide 5"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carousel-inicio-sucursal2"
-                      data-bs-slide-to="5"
-                      aria-label="Slide 6"
-                    ></button>
-                  </div>
-                  <div className="carousel-inner relative w-full overflow-hidden  md:h-[400px] lg:h-[600px] md:w-[400px] lg:w-[600px]">
-                    <div className="carousel-item active relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                        className="block w-full"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Cheerleading</h5>
-                      </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                        className="block w-full"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Parkour</h5>
-                      </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                        className="block w-full"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Gimnasia Femenil</h5>
-                      </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                        className="block w-full"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Gimnasia Varonil</h5>
-                      </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                        className="block w-full"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Acrobacia</h5>
-                      </div>
-                    </div>
-                    <div className="carousel-item relative float-left w-full">
-                      <img
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1674070603/titanes/Landing%20Page/Logo2.jpg"
-                        className="block w-full"
-                        alt="..."
-                      />
-                      <div className="carousel-caption block absolute -top-6 text-center">
-                        <h5 className="text-xl font-bold">Mini Gym</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal2"
-                    data-bs-slide="prev"
-                  >
-                    <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                    type="button"
-                    data-bs-target="#carousel-inicio-sucursal2"
-                    data-bs-slide="next"
-                  >
-                    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                  </button>
-                </div>
-                {/* <--End Carousel Sucursal 2--> */}
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full h-full text-white bg-[#1e1e1e] pt-5">
+        <div className="w-full px-4 h-1 bg-slate-100 rounded my-6"></div>
+        <section className="w-full h-full py-8">
           <div id="s-3" className="px-5 md:px-10 lg:px-16">
             <div className="flex flex-col justify-center">
               <p className="text-center text-3xl mb-3 font-bold">Agenda tu clase muestra</p>
@@ -327,10 +230,10 @@ export const Inicio = () => {
               </p>
             </div>
             <div className="w-full flex justify-center my-8">
-              <a className="flex flex-row justify-between items-center w-48 rounded-full border border-white border-solid p-3 transition duration-300 leading-snug hover:bg-[#25d366] hover:text-white" href="https://wa.me/2227080520?text=Quiero%20agendar%20mi%20clase%20muestra">
-                <p className="font-semibold">¡Escríbenos!</p>
-                <BsWhatsapp className="w-10 h-10"></BsWhatsapp>
-              </a>
+              <button onClick={handleModal} className="group flex gap-2 justify-between items-center w-fit rounded-full border border-white md:hover:border-white border-solid py-2 px-4 transition duration-300 leading-snug md:hover:bg-[#25d366] md:hover:text-white">
+                <p className="">¡Agenda ahora!</p>
+                <BsWhatsapp className="w-8 h-8 fill-[#25d366] stroke-[#25d366] transition duration-300 leading-snug md:group-hover:fill-white md:group-hover:stroke-white"></BsWhatsapp>
+              </button>
             </div>
           </div>
         </section>

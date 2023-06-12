@@ -8,7 +8,6 @@ export const Navbar = () => {
 
   return (
     <div className="w-full sticky z-10 top-0 h-20">
-      {/* <nav className="container min-w-full bg-[#9e0404] text-slate-100 h-20"> */}
       <nav className="container min-w-full bg-[#b00000] text-[#ffffff] py-2">
         <div className="flex flex-row h-full w-full justify-between items-center px-4 flex-wrap md:flex-nowrap lg:flex-nowrap">
           <NavLink to="/" onClick={() => setNavbarOpen(false)}>
@@ -37,7 +36,7 @@ export const Navbar = () => {
                     <VscChevronDown id="smS-svg" className="self-center" />
                   </div>
                 </button>
-                <ul className="hidden text-black group-hover/suc:block group-hover/suc:absolute group-hover/suc:text-start group-hover/suc:w-[100px] group-hover/suc:bg-white group-hover/suc:text-slate-600 group-hover/suc:shadow group-hover/suc:border group-hover/suc:rounded-sm group-hover/suc:border-black">
+                <ul className="hidden text-black group-hover/suc:block group-hover/suc:absolute group-hover/suc:text-start group-hover/suc:w-auto group-hover/suc:px-2 group-hover/suc:bg-white group-hover/suc:text-slate-600 group-hover/suc:shadow group-hover/suc:border group-hover/suc:rounded-sm group-hover/suc:border-black">
                   <li className="my-1 transition duration-300 hover:text-[#c0c0c0] leading-snug">
                     <NavLink end to='/sucursal1'
                       className={({ isActive }) =>
@@ -54,6 +53,34 @@ export const Navbar = () => {
                       }
                       onClick={() => setNavbarOpen(false)}>
                       Sucursal 2
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
+              <li className="group/ver">
+                <button id="butVer">
+                  <div id="div-smS" className="flex transition duration-300 hover:text-[#c0c0c0] leading-snug">
+                    <span id="smS-span">Curso de verano 2023</span>
+                    <VscChevronDown id="smS-svg" className="self-center" />
+                  </div>
+                </button>
+                <ul className="hidden text-black group-hover/ver:block group-hover/ver:absolute group-hover/ver:text-start group-hover/ver:w-auto group-hover/ver:px-2 group-hover/ver:bg-white group-hover/ver:text-slate-600 group-hover/ver:shadow group-hover/ver:border group-hover/ver:rounded-sm group-hover/ver:border-black">
+                  <li className="my-1 transition duration-300 hover:text-[#c0c0c0] leading-snug">
+                    <NavLink end to='/curso-de-verano-2023#mini'
+                      onClick={() => setNavbarOpen(false)}>
+                      Mini Gym/Parkour
+                    </NavLink>
+                  </li>
+                  <li className="my-1 transition duration-300 hover:text-[#c0c0c0] leading-snug">
+                    <NavLink end to='/curso-de-verano-2023#parkour'
+                      onClick={() => setNavbarOpen(false)}>
+                      Parkour
+                    </NavLink>
+                  </li>
+                  <li className="my-1 transition duration-300 hover:text-[#c0c0c0] leading-snug">
+                    <NavLink end to='/curso-de-verano-2023#gimnasiayporristas'
+                      onClick={() => setNavbarOpen(false)}>
+                      Gimnasia/Porristas
                     </NavLink>
                   </li>
                 </ul>
