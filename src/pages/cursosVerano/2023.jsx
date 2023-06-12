@@ -14,44 +14,9 @@ export function CursoVerano2023() {
             <p className="font-bold text-2xl text-cente">3 a 5 años</p>
           </div>
           <div id="media-container" className="w-full flex flex-col justify-center items-center gap-5">
-            {/* <video className="w-auto md:w-[640px] md:h-[480px]" autoPlay muted controls>
+            <video className="w-auto md:w-[640px] md:h-[480px]" autoPlay muted controls>
               <source src="https://res.cloudinary.com/dovrrjhdw/video/upload/v1686468718/titanesLP/VIDEO_PROMO_MAYO2023_nuennl.mp4" type="video/mp4" />
-            </video> */}
-            <div className=" w-auto md:w-[640px] lg:w-[900px] h-full border border-white rounded-lg">
-                  <Carousel
-                    showThumbs={false}
-                    showStatus={false}
-                    infiniteLoop
-                    interval={3000}
-                    autoPlay
-                  >
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
-                      <img className="w-full h-full object-cover object-center rounded-lg"
-                        width={1600}
-                        height={1066}
-                        alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/cama.jpg"
-                      />
-                      {/* <p className="legend">Fosa</p> */}
-                    </div>
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
-                      <img className="w-full h-full object-cover object-center rounded-lg"
-                        width={1600}
-                        height={1066}
-                        alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311649/titanes/Landing%20Page/Sucursal1/spots.jpg" />
-                      {/* <p className="legend">Legend 2</p> */}
-                    </div>
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
-                      <img className="w-full h-full object-cover object-center rounded-lg"
-                        width={1600}
-                        height={1066}
-                        alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/piso.jpg" />
-                      {/* <p className="legend">Legend 3</p> */}
-                    </div>
-                  </Carousel>
-                </div>
+            </video>
           </div>
           <div id='mini-info' className="w-full flex flex-col justify-center items-center gap-5">
             <div className="w-full flex flex-col gap-4">
@@ -154,44 +119,9 @@ export function CursoVerano2023() {
             <p className="font-bold text-2xl text-cente">6 a 15 años</p>
           </div>
           <div id="media-container" className="w-full flex flex-col justify-center items-center gap-5">
-            {/* <video className="w-auto md:w-[640px] md:h-[480px]" autoPlay muted controls>
-              <source src="https://res.cloudinary.com/dovrrjhdw/video/upload/v1686468718/titanesLP/VIDEO_PROMO_MAYO2023_nuennl.mp4" type="video/mp4" />
-            </video> */}
-            <div className=" w-auto md:w-[640px] lg:w-[900px] h-full border border-white rounded-lg">
-                  <Carousel
-                    showThumbs={false}
-                    showStatus={false}
-                    infiniteLoop
-                    interval={3000}
-                    autoPlay
-                  >
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
-                      <img className="w-full h-full object-cover object-center rounded-lg"
-                        width={1600}
-                        height={1066}
-                        alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/cama.jpg"
-                      />
-                      {/* <p className="legend">Fosa</p> */}
-                    </div>
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
-                      <img className="w-full h-full object-cover object-center rounded-lg"
-                        width={1600}
-                        height={1066}
-                        alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311649/titanes/Landing%20Page/Sucursal1/spots.jpg" />
-                      {/* <p className="legend">Legend 2</p> */}
-                    </div>
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
-                      <img className="w-full h-full object-cover object-center rounded-lg"
-                        width={1600}
-                        height={1066}
-                        alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/piso.jpg" />
-                      {/* <p className="legend">Legend 3</p> */}
-                    </div>
-                  </Carousel>
-                </div>
+            <video className="w-auto md:w-[640px] md:h-[480px]" autoPlay muted controls>
+              <source src="https://res.cloudinary.com/dovrrjhdw/video/upload/v1686468705/titanesLP/video_promocional_de_mayo_parkour_r49hfy.mp4" type="video/mp4" />
+            </video>
           </div>
           <div id='parkour-info' className="w-full flex flex-col justify-center items-center gap-5">
             <div className="w-full flex flex-col gap-4">

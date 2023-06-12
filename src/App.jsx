@@ -1,4 +1,4 @@
-import { Footer, Inicio, Sucursal1, Sucursal2, Cheerleading, Parkour, Gimnasia, Aviso, Whatsapp, WaForm, CursoVerano2023 } from './imports'
+import { Footer, Inicio, Sucursal1, Sucursal2, Cheerleading, Parkour, Gimnasia, Aviso, Whatsapp, WaForm, VeranoForm, CursoVerano2023 } from './imports'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 import { Navbar } from './components/navbar'
@@ -8,6 +8,7 @@ const HeaderLayout = () => {
     <div className="font-display">
         <Navbar/>
           <WaForm></WaForm>
+          <VeranoForm></VeranoForm>
           <Outlet/>
           <Whatsapp/>
         <Footer/>

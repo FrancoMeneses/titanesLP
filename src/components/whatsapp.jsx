@@ -6,7 +6,7 @@ export const Whatsapp = () => {
       <div className="bg-white w-40 rounded-md hidden group-hover/whatsapp:block absolute bottom-[65px] right-[-10px] border-2">
         <p className="m-0 p-2 text-xs">¡Haz click para agendar tu clase! 😃</p>
       </div>
-      <a href="https://wa.me/2224945862?text=¡Hola!%20Me%20gustaría%20más%20información" className="cursor-pointer">
+      <a href="https://wa.me/2227080520?text=¡Hola!%20Me%20gustaría%20más%20información" className="cursor-pointer">
       <BsWhatsapp className="w-8 h-8 md:w-10 md:h-10 fill-[#25d366] stroke-[#25d366]"></BsWhatsapp>
       </a>
     </div>

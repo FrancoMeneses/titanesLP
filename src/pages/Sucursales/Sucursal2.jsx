@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { Header } from "../../components/header"
 import { Carousel } from 'react-responsive-carousel'
 
@@ -5,7 +6,7 @@ export const Sucursal2 = () => {
   return (
     <div className="bg-black text-white">
       <Header id='p-f-suc1' title='SUCURSAL 2'></Header>
-      <div id="info" className="px-5 md:px-10 lg:px-16 text-center flex flex-col justify-center items-center gap-y-6">
+      <div id="info" className="px-5 md:px-10 lg:px-16 text-center flex flex-col justify-center items-center py-6">
         <div className="flex flex-col items-center gap-y-4 md:flex-row md:gap-8 lg:my-6">
           <div>
             <p className="text-justify mt-4 text-lg">En esta sucursal se cuenta con actividades como <strong>porra acrobática, gimnasia, mini gym y parkour</strong>, dentro de las instalaciones contamos con:
@@ -19,6 +20,23 @@ export const Sucursal2 = () => {
               <li>Colchonetas y materiales de apoyo para el aprendizaje seguro</li>
               <li>Área de pesas para los alumnos y alumnas</li>
             </ul>
+            <div className="hidden w-full h-fit md:flex flex-wrap justify-center items-center gap-5 py-2">
+            <NavLink to='/sucursal2#mini' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Mini Gym
+            </NavLink>
+            <NavLink to='/sucursal2#parkour' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Parkour
+            </NavLink>
+            <NavLink to='/sucursal2#porristas' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Porristas
+            </NavLink>
+            <NavLink to='/sucursal2#acrobacia' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Acrobacia
+            </NavLink>
+            <NavLink to='/sucursal2#gimnasia' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Gimnasia
+            </NavLink>
+          </div>
           </div>
           <div id="s2-instalaciones">
             {/* <p className="text-3xl font-semibold text-center mb-6">Instalaciones</p> */}
@@ -59,6 +77,23 @@ export const Sucursal2 = () => {
             </div>
 
           </div>
+          <div className="flex w-full flex-wrap md:hidden justify-center items-center gap-3 py-4">
+            <NavLink to='/sucursal2#mini' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Mini Gym
+            </NavLink>
+            <NavLink to='/sucursal2#parkour' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Parkour
+            </NavLink>
+            <NavLink to='/sucursal2#porristas' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Porristas
+            </NavLink>
+            <NavLink to='/sucursal2#acrobacia' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Acrobacia
+            </NavLink>
+            <NavLink to='/sucursal2#gimnasia' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+              Ver Gimnasia
+            </NavLink>
+          </div>
         </div>
         <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
       </div>
@@ -79,7 +114,7 @@ export const Sucursal2 = () => {
                 </div>
                 <div className="flex flex-col gap-y-4">
                   <p className="text-xl font-semibold">Sábado</p>
-                  <p className="text-md">De 9:00 am a 10:00 am</p>
+                  <p id="parkour" className="text-md">De 9:00 am a 10:00 am</p>
                 </div>
               </div>
             </div>
@@ -87,7 +122,7 @@ export const Sucursal2 = () => {
         </div>
         <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
       </div>
-      <div id="parkour">
+      <div>
         <p className="text-3xl font-semibold text-center my-12">Parkour</p>
         <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">Es una actividad para aprender algo nuevo haciendo ejercicio de una forma divertida, los ejercicios se adaptan a ti, comenzando desde cero, no requieres tener experiencia.</p>
         <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
@@ -102,14 +137,14 @@ export const Sucursal2 = () => {
               </div>
               <div className="text-center flex flex-col gap-y-4">
                 <p className="text-xl font-semibold">Sábado</p>
-                <p className="text-md">De 9:30 am a 11:30 am</p>
+                <p id="porristas" className="text-md">De 9:30 am a 11:30 am</p>
               </div>
             </div>
           </div>
         </div>
         <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
       </div>
-      <div id="porristas">
+      <div>
         <p className="text-3xl font-semibold text-center my-12">Porristas</p>
         <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">
           Es un deporte femenil y mixto que mezcla diversos elementos acrobáticos de piso y aéreos,
@@ -130,14 +165,14 @@ export const Sucursal2 = () => {
               <p className="text-2xl font-semibold">Femenil</p>
               <div className="flex flex-col gap-y-4">
                 <p className="text-xl font-semibold">Mi-Vi</p>
-                <p className="text-md">De 7:00 pm a 8:00 pm</p>
+                <p id="acrobacia" className="text-md">De 7:00 pm a 8:00 pm</p>
               </div>
             </div>
           </div>
         </div>
         <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
       </div>
-      <div id="acrobacia">
+      <div>
         <p className="text-3xl font-semibold text-center my-12">Acrobacia</p>
         <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">
           Es un deporte femenil y mixto que mezcla diversos elementos acrobáticos de piso y aéreos,
@@ -151,14 +186,14 @@ export const Sucursal2 = () => {
               <p className="text-2xl font-semibold">Niveles 1 al 7</p>
               <div className="flex flex-col gap-y-4">
                 <p className="text-xl font-semibold">Mi-Vi</p>
-                <p className="text-md">De 6:00 pm a 7:00 pm</p>
+                <p id="gimnasia" className="text-md">De 6:00 pm a 7:00 pm</p>
               </div>
             </div>
           </div>
         </div>
         <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
       </div>
-      <div id="gimnasia">
+      <div>
         <p className="text-3xl font-semibold text-center my-12">Gimnasia Artística</p>
         <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">
           Es un deporte dotado de arte y movimiento. Requiere una combinación de fuerza,

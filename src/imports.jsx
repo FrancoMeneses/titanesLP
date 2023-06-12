@@ -11,5 +11,7 @@ import { Gimnasia } from "./pages/Actividades/Gimnasia"
 import { Aviso } from "./pages/Aviso"
 import { WaForm } from "./components/modalForm"
 import { CursoVerano2023 } from "./pages/cursosVerano/2023"
+import { BtnCursoVerano } from "./components/btonCursoVerano"
+import { VeranoForm } from "./components/modalFormVerano"
 
-export { Navbar, Footer, Whatsapp, Inicio, Sucursal1, Sucursal2, Cheerleading, Parkour, Gimnasia, Aviso, BtnWhatsApp, WaForm, CursoVerano2023 }
+export { Navbar, Footer, Whatsapp, Inicio, Sucursal1, Sucursal2, Cheerleading, Parkour, Gimnasia, Aviso, BtnWhatsApp, WaForm, CursoVerano2023, BtnCursoVerano, VeranoForm }

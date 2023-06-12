@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { Header } from "../../components/header"
 import { Carousel } from 'react-responsive-carousel'
 
@@ -5,8 +6,8 @@ export const Sucursal1 = () => {
   return (
     <div className="bg-black text-white">
       <Header id='p-f-suc1' title='SUCURSAL 1'></Header>
-      <div id="info-suc1" className="px-5 md:px-10 lg:px-16 text-center flex flex-col justify-center items-center gap-y-6">
-        <div className="flex flex-col items-center gap-y-4 md:flex-row md:gap-8 lg:my-6">
+      <div id="info-suc1" className="px-5 md:px-10 lg:px-16 text-center flex flex-col justify-center items-center py-6">
+        <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8 lg:my-6">
           <div>
             <p className="text-justify mt-4 text-lg">Esta sucursal cuenta con la <strong>primera escuela de parkour en Puebla</strong>, el mejor lugar para iniciar y aprender parkour, durante las clases también se les enseñan elementos de acrobacia, además de contar con <strong>Mini Gym o Mini Parkour</strong>. Las instalaciones cuentan con spots especializados para entrenar parkour y además:
             </p>
@@ -18,9 +19,16 @@ export const Sucursal1 = () => {
               <li>Colchonetas y materiales de apoyo para el aprendizaje seguro</li>
               <li>Piso mat profesional</li>
             </ul>
+            <div className="hidden w-full md:flex justify-center items-center gap-5">
+              <NavLink to='/sucursal1#mini' className='w-[150px] h-fit rounded-full px-4 py-2 mt-[50px] bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                Ver Mini Gym
+              </NavLink>
+              <NavLink to='/sucursal1#parkour' className='w-[150px] h-fit rounded-full px-4 py-2 mt-[50px] bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                Ver Parkour
+              </NavLink>
+            </div>
           </div>
           <div id="instalaciones">
-            {/* <p className="text-3xl font-semibold text-center mb-6">Instalaciones</p> */}
             <div className="w-full h-full border border-white rounded-lg">
               <Carousel
                 showThumbs={false}
@@ -59,10 +67,18 @@ export const Sucursal1 = () => {
 
           </div>
         </div>
-        <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
+        <div className="flex w-full md:hidden justify-center items-center gap-5">
+          <NavLink to='/sucursal1#mini' className='w-[150px] h-fit rounded-full px-4 py-2 mt-[50px] bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+            Ver Mini Gym
+          </NavLink>
+          <NavLink to='/sucursal1#parkour' className='w-[150px] h-fit rounded-full px-4 py-2 mt-[50px] bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+            Ver Parkour
+          </NavLink>
+        </div>
+        <div className="w-full px-4 h-1 bg-slate-100 rounded my-6"></div>
       </div>
-      <div id="mini" className="mt-8 w-full">
-        <p className="text-3xl font-semibold text-center my-10 md:my-12 px-5 md:px-10 lg:px-16">Actividades en Sucursal 1</p>
+      <div id="mini" className="w-full">
+        <p className="text-3xl font-semibold text-center md:my-8 px-5 md:px-10 lg:px-16">Actividades en Sucursal 1</p>
         <div id="minigym-suc1" className="my-8 w-full">
           <p className="text-2xl font-semibold text-center mb-6 px-5 md:px-10 lg:px-16">Mini Gym o Mini Parkour</p>
           <p className="text-justify mb-6 text-lg px-5 md:px-10 lg:px-16">Para niños y niñas de <strong>3 a 5 años</strong>, enseñando elementos básicos de parkour y gimnasia,
@@ -133,7 +149,7 @@ export const Sucursal1 = () => {
                 <div className="flex flex-col gap-y-4">
                   <p className="text-xl font-semibold">Mi-Vi</p>
                   <p className="text-md">De 4:00 pm a 5:00 pm</p>
-                  <p className="text-md">De 5:00 pm a 6:00 pm</p>
+                  <p id="parkour" className="text-md">De 5:00 pm a 6:00 pm</p>
                 </div>
               </div>
             </div>
@@ -141,7 +157,7 @@ export const Sucursal1 = () => {
         </div>
         <div className="w-full px-4 h-1 bg-slate-100 rounded mb-6"></div>
       </div>
-      <div id="parkour">
+      <div>
         <p className="text-3xl font-semibold text-center my-12">Parkour</p>
         <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">Es una actividad para aprender algo nuevo haciendo ejercicio de una forma divertida, los ejercicios se adaptan a ti, comenzando desde cero, no requieres tener experiencia.</p>
         <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>

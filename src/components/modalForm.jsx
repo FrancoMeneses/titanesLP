@@ -12,10 +12,13 @@ export function WaForm() {
 
   return (
     <article id="modalId" onClick={(e)=>{e.target.id === 'modalId' ? document.getElementById('modalId').classList.add('hidden') : ''}} className="hidden flex-col space-y-4 min-w-screen h-screen animated fadeIn faster fixed left-0 top-0 justify-center items-center inset-0 z-50 outline-none focus:outline-none backdrop-brightness-50">
-      <div id='lodemas' className="flex flex-col p-4 bg-white rounded-2xl w-[350px] h-auto font-text relative">
+      <div id='modalPrincipal' className="flex flex-col p-4 bg-white rounded-2xl w-[350px] h-auto font-text relative">
         <button className="absolute top-2 right-2 px-4 py-2 text-white rounded-full bg-[#b00000] font-semibold" onClick={hideModal}>Cerrar</button>
         <form onSubmit={handleSubmitForm} autoComplete="off" className="flex flex-col w-full h-full justify-start mt-[45px] items-center gap-6">
-          <p className="text-center font-semibold">Ingrese la información para agendar su clase</p>
+          <div>
+            <p className="text-justify font-semibold">Ingrese la información para agendar su clase</p>
+            <p className="text-justify italic text-[14px]">*Clases muestra solo aplican para clases regulares</p>
+          </div>
           <div className="w-full flex flex-col">
             <label className="" htmlFor="clasePara-s">La clase es para...<span className="font-semibold text-red-500">*</span></label>
             <select name="clasePara" id="clasePara-s" onChange={handleEditContactForm} value={waForm.clasePara} className="w-full border-2 border-[#b00000] rounded-lg h-[50px] py-1 px-2 bg-white">

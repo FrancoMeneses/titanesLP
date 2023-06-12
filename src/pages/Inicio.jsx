@@ -1,7 +1,7 @@
 import { Header } from "../components/header"
 import { BsWhatsapp } from "react-icons/bs"
 import 'tw-elements'
-import { BtnWhatsApp } from "../imports"
+import { BtnWhatsApp, BtnCursoVerano } from "../imports"
 import { NavLink } from "react-router-dom"
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
@@ -17,8 +17,15 @@ export const Inicio = () => {
       <Header id='p-f-home' title="TITANES ALL-STARS" />
       <div className="flex flex-col bg-black text-white">
         <section className="flex flex-col w-full justify-center items-center gap-6 px-5 md:px-10 lg:px-16 py-8">
-          <p className="font-bold text-4xl text-center w-[full]">¡Unete al equipo!</p>
-          <BtnWhatsApp />
+          <div>
+            <video className="w-auto md:w-[640px] md:h-[480px]" autoPlay muted controls>
+              <source src="https://res.cloudinary.com/dovrrjhdw/video/upload/v1686542289/titanesLP/video_promocional_mayo_23_dehlat.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="w-full flex flex-col justify-center items-center gap-3">
+            <BtnCursoVerano />
+            <BtnWhatsApp />
+          </div>
           <nav id="actividades-home" className="w-full flex flex-col gap-2 justify-center items-center">
             <p className="w-full text-center font-semibold text-2xl">Actividades</p>
             <ul className="w-full text-white flex flex-col md:bg-[#b00000] md:rounded-lg md:flex-row md:justify-center md:items-center md:gap-10 lg:w-[80%] lg:gap-16">
@@ -210,7 +217,7 @@ export const Inicio = () => {
             </div>
             <div>
               <p className="text-center text-4xl mt-8 mb-3 font-bold">
-                Entrenamiento a grupos externos
+                Renta de instalaciones
               </p>
               <p className="text-justify text-xl mt-5">
                 Si deseas aprender <strong>acrobacias</strong> o <strong>gimnasia</strong> de piso para complementar algún deporte que practicas puedes contactarnos,
