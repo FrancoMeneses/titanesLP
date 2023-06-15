@@ -144,7 +144,7 @@ export const Sucursal2 = () => {
           <p className="text-justify mb-6 text-lg px-5 md:px-10 lg:px-16">Para niños y niñas de <strong>3 a 5 años</strong>, enseñando elementos básicos de parkour y gimnasia,
             con circuitos de obstáculos para desarrollar <strong>coordinación, flexibilidad, fuerza, equilibrio y confianza en si mismo.</strong> Reforzando las instrucciones preescolares de esperar su turno, <strong>respetar y convivir con los demás.</strong></p>
           <div className="flex flex-col justify-center items-center w-full">
-            <div className="h-[200px] w-full bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dovrrjhdw/image/upload/v1686468552/titanesLP/9_rxqkxm.jpg)' }}></div>
+            <div className="h-[200px] w-full bg-no-repeat bg-local bg-[center_top_-600px] lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dovrrjhdw/image/upload/v1686468552/titanesLP/9_rxqkxm.jpg)' }}></div>
             <div className="text-center flex flex-col gap-y-6">
               <p className="text-2xl font-semibold text-center mt-6 mb-6">Horarios</p>
               <div className="text-center flex flex-col gap-6 border-2 border-[#b00000] rounded-md h-auto w-[250px] md:w-[295px] p-6 md:p-10 justify-center md:justify-start">
@@ -164,8 +164,8 @@ export const Sucursal2 = () => {
       </div>
       <div>
         <p className="text-3xl font-semibold text-center my-12">Parkour</p>
-        <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">Es una actividad para aprender algo nuevo haciendo ejercicio de una forma divertida, los ejercicios se adaptan a ti, comenzando desde cero, no requieres tener experiencia.</p>
-        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
+        <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">Parkour, el arte del movimiento, deporte que puede ser practicado en cualquier edad, tenemos grupos para niños y niñas, jóvenes y adultos, donde desarrollarás fuerza, flexibilidad, agilidad, coordinación y sobre todo también aprenderas acrobacias. Te invitamos a aprender esta divertida actividad donde no se requiere tener experiencia.</p>
+        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-local bg-[center_top_-200px] lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
         <div id="parkour2-suc1" className="my-8 px-5 md:px-10 lg:px-16">
           <p className="text-3xl font-semibold text-center my-12">Horarios - Categorías</p>
           <div className="flex flex-col w-full justify-center items-center md:items-start md:flex-row text-center gap-8">
@@ -190,7 +190,7 @@ export const Sucursal2 = () => {
           Es un deporte femenil y mixto que mezcla diversos elementos acrobáticos de piso y aéreos,
           conformando una rutina con gimnasia de piso, cargadas, pirámides, saltos, baile de forma
           coreografeada impresionando a todo público que lo ve.</p>
-        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
+        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-local bg-[center_top_-200px] lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
         <div id="parkour2-suc1" className="my-8 px-5 md:px-10 lg:px-16">
           <p className="text-3xl font-semibold text-center my-12">Horarios - Categorías</p>
           <div className="flex flex-col w-full justify-center items-center md:items-start md:flex-row text-center gap-8">
@@ -215,10 +215,8 @@ export const Sucursal2 = () => {
       <div>
         <p className="text-3xl font-semibold text-center my-12">Acrobacia</p>
         <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">
-          Es un deporte femenil y mixto que mezcla diversos elementos acrobáticos de piso y aéreos,
-          conformando una rutina con gimnasia de piso, cargadas, pirámides, saltos, baile de forma
-          coreografeada impresionando a todo público que lo ve.</p>
-        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
+          Clases para aprender exclusivamente acrobacias desde lo más básico hasta lo más avanzado (paradas de manos, vueltas de carro, mortales, flips, giros y demas).</p>
+        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-local bg-[center_top_-200px] lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
         <div id="parkour2-suc1" className="my-8 px-5 md:px-10 lg:px-16">
           <p className="text-3xl font-semibold text-center my-12">Horarios - Categorías</p>
           <div className="flex flex-col w-full justify-center items-center md:items-start md:flex-row text-center gap-8">
@@ -237,10 +235,10 @@ export const Sucursal2 = () => {
         <p className="text-3xl font-semibold text-center my-12">Gimnasia Artística</p>
         <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">
           Es un deporte dotado de arte y movimiento. Requiere una combinación de fuerza,
-          balance, agilidad, y coordinación del cuerpo en el salón donde se practica. Los gimnastas
+          balance, agilidad, y coordinación del cuerpo. Los gimnastas
           realizan varios movimientos continuos que requieren flexibilidad, resistencia, y conocimiento
-          de los saltos en la viga de balance y en el piso.</p>
-        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-fixed bg-center lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
+          de de cada uno de los aparatos, no se requiere tener experiencia.</p>
+        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-local bg-[center_top_-200px] lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
         <div id="parkour2-suc1" className="my-8 px-5 md:px-10 lg:px-16">
           <p className="text-3xl font-semibold text-center my-12">Horarios - Categorías</p>
           <div className="flex flex-col w-full justify-center items-center md:items-start md:flex-row text-center gap-8">

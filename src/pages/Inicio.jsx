@@ -4,8 +4,6 @@ import { BtnWhatsApp, BtnCursoVerano } from "../imports"
 import { NavLink } from "react-router-dom"
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { useContext } from "react"
-import { TitanesContext } from "../context/titanesContext"
 import { FaChevronDown, FaExternalLinkAlt } from "react-icons/fa"
 
 export const Inicio = () => {
@@ -75,26 +73,11 @@ export const Inicio = () => {
               </div>
               {/* <!-- accordion-tab --> */}
               {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[20%] border-white border-b md:border-none" tabIndex="3">
+              <div className="group outline-none accordion-section w-full md:w-[20%] border-white border-b md:border-none">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
-                  <h2 className="text-center w-full transition ease duration-500">
+                  <NavLink to='/sucursal2#porristas' className="text-center w-full group-focus:font-semibold text-white transition ease duration-500">
                     Porristas
-                  </h2>
-                  <div className="h-8 w-8 items-center inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-2 mr-2">
-                    <FaChevronDown />
-                  </div>
-                </div>
-                <div className="group-focus:max-h-screen max-h-0 w-full bg-[#b00000] md:rounded-b-lg md:rounded-none md:px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center">
-                  <ul className="border-t border-white md:border-none w-full flex flex-col justify-center items-center pr-5">
-                    <li className="min-h-[48px] flex justify-center items-center gap-4">
-                      <NavLink to='/sucursal1#porristas' className='md:underline underline-offset-2'>Sucursal 1</NavLink>
-                      <FaExternalLinkAlt className="md:hidden"></FaExternalLinkAlt>
-                    </li>
-                    <li className="min-h-[48px] flex justify-center items-center gap-4">
-                      <NavLink to='/sucursal2#porristas' className='md:underline underline-offset-2'>Sucursal 2</NavLink>
-                      <FaExternalLinkAlt className="md:hidden"></FaExternalLinkAlt>
-                    </li>
-                  </ul>
+                  </NavLink>
                 </div>
               </div>
               {/* <!-- accordion-tab --> */}
