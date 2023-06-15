@@ -75,9 +75,9 @@ export const Sucursal1 = () => {
             Ver Parkour
           </NavLink>
         </div>
-        <div className="w-full px-4 h-1 bg-slate-100 rounded my-6"></div>
+        <div id="mini" className="w-full px-4 h-1 bg-slate-100 rounded my-6"></div>
       </div>
-      <div id="mini" className="w-full">
+      <div className="w-full">
         <p className="text-3xl font-semibold text-center md:my-8 px-5 md:px-10 lg:px-16">Actividades en Sucursal 1</p>
         <div id="minigym-suc1" className="my-8 w-full">
           <p className="text-2xl font-semibold text-center mb-6 px-5 md:px-10 lg:px-16">Mini Gym o Mini Parkour</p>

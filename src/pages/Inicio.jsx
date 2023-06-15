@@ -1,5 +1,4 @@
 import { Header } from "../components/header"
-import { BsWhatsapp } from "react-icons/bs"
 import 'tw-elements'
 import { BtnWhatsApp, BtnCursoVerano } from "../imports"
 import { NavLink } from "react-router-dom"
@@ -7,10 +6,9 @@ import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { useContext } from "react"
 import { TitanesContext } from "../context/titanesContext"
+import { FaChevronDown, FaExternalLinkAlt } from "react-icons/fa"
 
 export const Inicio = () => {
-
-  const {handleModal} = useContext(TitanesContext)
 
   return (
     <main>
@@ -24,9 +22,94 @@ export const Inicio = () => {
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-3">
             <BtnCursoVerano />
-            <BtnWhatsApp />
           </div>
-          <nav id="actividades-home" className="w-full flex flex-col gap-2 justify-center items-center">
+          <section id="actividades-home" className="w-full flex flex-col gap-2 justify-center items-center">
+            <p className="w-full text-center font-semibold text-2xl">Actividades</p>
+            <div className="overflow-hidden flex flex-col md:flex-row md:justify-around border md:border-none rounded-lg w-full">
+              {/* <!-- accordion-tab  --> */}
+              <div className="group outline-none accordion-section w-full md:w-[20%] border-white border-b md:border-none" tabIndex="1">
+                <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
+                  <h2 className="text-center w-full transition ease duration-500">
+                    Mini Gym
+                  </h2>
+                  <div className="h-8 w-8 items-center inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-2 mr-2">
+                    <FaChevronDown />
+                  </div>
+                </div>
+                <div className="group-focus:max-h-screen max-h-0 w-full bg-[#b00000] md:rounded-b-lg md:rounded-none md:px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center">
+                  <ul className="border-t border-white md:border-none w-full flex flex-col justify-center items-center pr-5">
+                    <li className="min-h-[48px] flex justify-center items-center gap-4">
+                      <NavLink to='/sucursal1#mini' className='md:underline underline-offset-2'>Sucursal 1</NavLink>
+                      <FaExternalLinkAlt className="md:hidden"></FaExternalLinkAlt>
+                    </li>
+                    <li className="min-h-[48px] flex justify-center items-center gap-4">
+                      <NavLink to='/sucursal2#mini' className='md:underline underline-offset-2'>Sucursal 2</NavLink>
+                      <FaExternalLinkAlt className="md:hidden"></FaExternalLinkAlt>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/* <!-- accordion-tab --> */}
+              {/* <!-- accordion-tab  --> */}
+              <div className="group outline-none accordion-section w-full md:w-[20%] border-white border-b md:border-none" tabIndex="2">
+                <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
+                  <h2 className="text-center w-full transition ease duration-500">
+                    Parkour
+                  </h2>
+                  <div className="h-8 w-8 items-center inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-2 mr-2">
+                    <FaChevronDown />
+                  </div>
+                </div>
+                <div className="group-focus:max-h-screen max-h-0 w-full bg-[#b00000] md:rounded-b-lg md:rounded-none md:px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center">
+                  <ul className="border-t border-white md:border-none w-full flex flex-col justify-center items-center pr-5">
+                    <li className="min-h-[48px] flex justify-center items-center gap-4">
+                      <NavLink to='/sucursal1#parkour' className='md:underline underline-offset-2'>Sucursal 1</NavLink>
+                      <FaExternalLinkAlt className="md:hidden"></FaExternalLinkAlt>
+                    </li>
+                    <li className="min-h-[48px] flex justify-center items-center gap-4">
+                      <NavLink to='/sucursal2#parkour' className='md:underline underline-offset-2'>Sucursal 2</NavLink>
+                      <FaExternalLinkAlt className="md:hidden"></FaExternalLinkAlt>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/* <!-- accordion-tab --> */}
+              {/* <!-- accordion-tab  --> */}
+              <div className="group outline-none accordion-section w-full md:w-[20%] border-white border-b md:border-none" tabIndex="3">
+                <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
+                  <h2 className="text-center w-full transition ease duration-500">
+                    Porristas
+                  </h2>
+                  <div className="h-8 w-8 items-center inline-flex justify-center transform transition ease duration-500 group-focus:text-white group-focus:-rotate-180 absolute top-0 right-0 mb-auto ml-auto mt-2 mr-2">
+                    <FaChevronDown />
+                  </div>
+                </div>
+                <div className="group-focus:max-h-screen max-h-0 w-full bg-[#b00000] md:rounded-b-lg md:rounded-none md:px-4 overflow-hidden ease duration-500 flex flex-col justify-center items-center">
+                  <ul className="border-t border-white md:border-none w-full flex flex-col justify-center items-center pr-5">
+                    <li className="min-h-[48px] flex justify-center items-center gap-4">
+                      <NavLink to='/sucursal1#porristas' className='md:underline underline-offset-2'>Sucursal 1</NavLink>
+                      <FaExternalLinkAlt className="md:hidden"></FaExternalLinkAlt>
+                    </li>
+                    <li className="min-h-[48px] flex justify-center items-center gap-4">
+                      <NavLink to='/sucursal2#porristas' className='md:underline underline-offset-2'>Sucursal 2</NavLink>
+                      <FaExternalLinkAlt className="md:hidden"></FaExternalLinkAlt>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/* <!-- accordion-tab --> */}
+              {/* <!-- accordion-tab  --> */}
+              <div className="group outline-none accordion-section w-full md:w-[40%]">
+                <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
+                  <NavLink to='/sucursal2#gimnasia' className="text-center w-full group-focus:font-semibold text-white transition ease duration-500">
+                    Gimnasia Femenil y Varonil
+                  </NavLink>
+                </div>
+              </div>
+              {/* <!-- accordion-tab --> */}
+            </div>
+          </section>
+          {/* <nav id="actividades-home" className="w-full flex flex-col gap-2 justify-center items-center">
             <p className="w-full text-center font-semibold text-2xl">Actividades</p>
             <ul className="w-full text-white flex flex-col md:bg-[#b00000] md:rounded-lg md:flex-row md:justify-center md:items-center md:gap-10 lg:w-[80%] lg:gap-16">
               <li className="text-center h-[48px] bg-[#b00000] rounded-t-lg md:rounded-none md:border-none border border-white flex justify-center items-center underline md:no-underline md:hover:underline">
@@ -50,15 +133,10 @@ export const Inicio = () => {
                 </NavLink>
               </li>
             </ul>
-          </nav>
+          </nav> */}
         </section>
         <section className="w-full h-full py-8">
           <div id="s-2" className="px-5 md:px-10 lg:px-16 flex flex-col items-center">
-            {/* <div>
-              <p className="text-center text-4xl mb-12 font-bold">
-                Contamos con dos sucursales
-              </p>
-            </div> */}
             <div className="text-center flex flex-col items-center gap-y-4">
               <p className="text-3xl font-semibold">
                 Sucursal 1
@@ -91,7 +169,7 @@ export const Inicio = () => {
                     interval={3000}
                     autoPlay
                   >
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                    <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
                       <img className="w-full h-full object-cover object-center rounded-lg"
                         width={1600}
                         height={1066}
@@ -100,7 +178,7 @@ export const Inicio = () => {
                       />
                       {/* <p className="legend">Fosa</p> */}
                     </div>
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                    <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
                       <img className="w-full h-full object-cover object-center rounded-lg"
                         width={1600}
                         height={1066}
@@ -108,7 +186,7 @@ export const Inicio = () => {
                         src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311649/titanes/Landing%20Page/Sucursal1/spots.jpg" />
                       {/* <p className="legend">Legend 2</p> */}
                     </div>
-                    <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                    <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
                       <img className="w-full h-full object-cover object-center rounded-lg"
                         width={1600}
                         height={1066}
@@ -151,7 +229,7 @@ export const Inicio = () => {
               </div> */}
             <div className="w-full h-full flex flex-col justify-center items-center gap-2">
               <p className="text-2xl font-semibold mb-4">Instalaciones</p>
-              <div className="w-full h-full border border-black rounded-lg">
+              <div className="w-full h-full border border-white rounded-lg">
                 <Carousel
                   showThumbs={false}
                   showStatus={false}
@@ -159,29 +237,69 @@ export const Inicio = () => {
                   interval={3000}
                   autoPlay
                 >
-                  <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
                     <img className="w-full h-full object-cover object-center rounded-lg"
                       width={1600}
                       height={1066}
                       alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/barra2_z6gha3.jpg"
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_5_eh3ygy.jpg"
                     />
                     {/* <p className="legend">Fosa</p> */}
                   </div>
-                  <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
                     <img className="w-full h-full object-cover object-center rounded-lg"
                       width={1600}
                       height={1066}
                       alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/aros_t0ttwu.jpg" />
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_6_oammfs.jpg" />
                     {/* <p className="legend">Legend 2</p> */}
                   </div>
-                  <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
+                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
                     <img className="w-full h-full object-cover object-center rounded-lg"
                       width={1600}
                       height={1066}
                       alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/barra1_p9iet4.jpg" />
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_4_b7qmxt.jpg" />
+                    {/* <p className="legend">Legend 3</p> */}
+                  </div>
+                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
+                    <img className="w-full h-full object-cover object-center rounded-lg"
+                      width={1600}
+                      height={1066}
+                      alt=""
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_3_uvc8kd.jpg" />
+                    {/* <p className="legend">Legend 3</p> */}
+                  </div>
+                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
+                    <img className="w-full h-full object-cover object-center rounded-lg"
+                      width={1600}
+                      height={1066}
+                      alt=""
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_1_bmxrhf.jpg" />
+                    {/* <p className="legend">Legend 3</p> */}
+                  </div>
+                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
+                    <img className="w-full h-full object-cover object-center rounded-lg"
+                      width={1600}
+                      height={1066}
+                      alt=""
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_7_uv1wyy.jpg" />
+                    {/* <p className="legend">Legend 3</p> */}
+                  </div>
+                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
+                    <img className="w-full h-full object-cover object-center rounded-lg"
+                      width={1600}
+                      height={1066}
+                      alt=""
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_2_tv9yqq.jpg" />
+                    {/* <p className="legend">Legend 3</p> */}
+                  </div>
+                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
+                    <img className="w-full h-full object-cover object-center rounded-lg"
+                      width={1600}
+                      height={1066}
+                      alt=""
+                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_8_wptbyl.jpg" />
                     {/* <p className="legend">Legend 3</p> */}
                   </div>
                 </Carousel>
@@ -237,10 +355,7 @@ export const Inicio = () => {
               </p>
             </div>
             <div className="w-full flex justify-center my-8">
-              <button onClick={handleModal} className="group flex gap-2 justify-between items-center w-fit rounded-full border border-white md:hover:border-white border-solid py-2 px-4 transition duration-300 leading-snug md:hover:bg-[#25d366] md:hover:text-white">
-                <p className="">¡Agenda ahora!</p>
-                <BsWhatsapp className="w-8 h-8 fill-[#25d366] stroke-[#25d366] transition duration-300 leading-snug md:group-hover:fill-white md:group-hover:stroke-white"></BsWhatsapp>
-              </button>
+              <BtnWhatsApp message={`¡Agenda ahora!`} />
             </div>
           </div>
         </section>

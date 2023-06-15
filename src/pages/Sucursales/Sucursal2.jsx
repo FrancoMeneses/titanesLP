@@ -21,24 +21,24 @@ export const Sucursal2 = () => {
               <li>Área de pesas para los alumnos y alumnas</li>
             </ul>
             <div className="hidden w-full h-fit md:flex flex-wrap justify-center items-center gap-5 py-2">
-            <NavLink to='/sucursal2#mini' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
-              Ver Mini Gym
-            </NavLink>
-            <NavLink to='/sucursal2#parkour' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
-              Ver Parkour
-            </NavLink>
-            <NavLink to='/sucursal2#porristas' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
-              Ver Porristas
-            </NavLink>
-            <NavLink to='/sucursal2#acrobacia' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
-              Ver Acrobacia
-            </NavLink>
-            <NavLink to='/sucursal2#gimnasia' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
-              Ver Gimnasia
-            </NavLink>
+              <NavLink to='/sucursal2#mini' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                Ver Mini Gym
+              </NavLink>
+              <NavLink to='/sucursal2#parkour' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                Ver Parkour
+              </NavLink>
+              <NavLink to='/sucursal2#porristas' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                Ver Porristas
+              </NavLink>
+              <NavLink to='/sucursal2#acrobacia' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                Ver Acrobacia
+              </NavLink>
+              <NavLink to='/sucursal2#gimnasia' className='w-[150px] h-fit rounded-full px-4 py-2 bg-[#b00000] border border-white transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
+                Ver Gimnasia
+              </NavLink>
+            </div>
           </div>
-          </div>
-          <div id="s2-instalaciones">
+          <div id="s2-instalaciones" className="md:w-full">
             {/* <p className="text-3xl font-semibold text-center mb-6">Instalaciones</p> */}
             <div className="w-full h-full border border-white rounded-lg">
               <Carousel
@@ -53,7 +53,7 @@ export const Sucursal2 = () => {
                     width={1600}
                     height={1066}
                     alt=""
-                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/barra2_z6gha3.jpg"
+                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_5_eh3ygy.jpg"
                   />
                   {/* <p className="legend">Fosa</p> */}
                 </div>
@@ -62,7 +62,7 @@ export const Sucursal2 = () => {
                     width={1600}
                     height={1066}
                     alt=""
-                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/aros_t0ttwu.jpg" />
+                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_6_oammfs.jpg" />
                   {/* <p className="legend">Legend 2</p> */}
                 </div>
                 <div className="w-full h-[216.5px] md:h-[400px] lg:h-[450px] 2xl:h-[650px]">
@@ -70,7 +70,47 @@ export const Sucursal2 = () => {
                     width={1600}
                     height={1066}
                     alt=""
-                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686506988/titanesLP/Sucursal%202/barra1_p9iet4.jpg" />
+                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_4_b7qmxt.jpg" />
+                  {/* <p className="legend">Legend 3</p> */}
+                </div>
+                <div className="w-full h-[216.5px] md:h-[400px] lg:h-[450px] 2xl:h-[650px]">
+                  <img className="w-full h-full object-cover object-center rounded-lg"
+                    width={1600}
+                    height={1066}
+                    alt=""
+                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_3_uvc8kd.jpg" />
+                  {/* <p className="legend">Legend 3</p> */}
+                </div>
+                <div className="w-full h-[216.5px] md:h-[400px] lg:h-[450px] 2xl:h-[650px]">
+                  <img className="w-full h-full object-cover object-center rounded-lg"
+                    width={1600}
+                    height={1066}
+                    alt=""
+                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_1_bmxrhf.jpg" />
+                  {/* <p className="legend">Legend 3</p> */}
+                </div>
+                <div className="w-full h-[216.5px] md:h-[400px] lg:h-[450px] 2xl:h-[650px]">
+                  <img className="w-full h-full object-cover object-center rounded-lg"
+                    width={1600}
+                    height={1066}
+                    alt=""
+                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_7_uv1wyy.jpg" />
+                  {/* <p className="legend">Legend 3</p> */}
+                </div>
+                <div className="w-full h-[216.5px] md:h-[400px] lg:h-[450px] 2xl:h-[650px]">
+                  <img className="w-full h-full object-cover object-center rounded-lg"
+                    width={1600}
+                    height={1066}
+                    alt=""
+                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_2_tv9yqq.jpg" />
+                  {/* <p className="legend">Legend 3</p> */}
+                </div>
+                <div className="w-full h-[216.5px] md:h-[400px] lg:h-[450px] 2xl:h-[650px]">
+                  <img className="w-full h-full object-cover object-center rounded-lg"
+                    width={1600}
+                    height={1066}
+                    alt=""
+                    src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_8_wptbyl.jpg" />
                   {/* <p className="legend">Legend 3</p> */}
                 </div>
               </Carousel>
@@ -266,7 +306,7 @@ export const Sucursal2 = () => {
             </div>
           </div>
           <div className="mt-4">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
