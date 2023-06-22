@@ -59,14 +59,6 @@ export function CursoVerano2023() {
                 </p>
               </div> 
             </div>
-            <div className="w-full flex flex-col justify-center gap-4">
-              <h3 className="font-semibold text-2xl text-center">Costos</h3>
-              <ul className="list-disc text-start list-inside">
-                <li>
-                  Costo normal - $4150 pesos.
-                </li>
-              </ul>
-            </div>
             <div className="w-full flex flex-col gap-4">
               <h3 className="font-semibold text-2xl text-center">Promociones</h3>
               <ul className="list-disc text-start list-inside">
@@ -167,14 +159,6 @@ export function CursoVerano2023() {
                 </p>
               </div> 
             </div>
-            <div className="w-full flex flex-col justify-center gap-4">
-              <h3 className="font-semibold text-2xl text-center">Costos</h3>
-              <ul className="list-disc text-start list-inside">
-                <li>
-                  Costo normal - $3300 pesos.
-                </li>
-              </ul>
-            </div>
             <div className="w-full flex flex-col gap-4">
               <h3 className="font-semibold text-2xl text-center">Promociones</h3>
               <ul className="list-disc text-start list-inside">
@@ -243,7 +227,7 @@ export function CursoVerano2023() {
                         width={1600}
                         height={1066}
                         alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/cama.jpg"
+                        src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_5_eh3ygy.jpg"
                       />
                       {/* <p className="legend">Fosa</p> */}
                     </div>
@@ -252,7 +236,7 @@ export function CursoVerano2023() {
                         width={1600}
                         height={1066}
                         alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311649/titanes/Landing%20Page/Sucursal1/spots.jpg" />
+                        src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_1_bmxrhf.jpg" />
                       {/* <p className="legend">Legend 2</p> */}
                     </div>
                     <div className="w-full h-[216.5px] md:h-[500px] lg:h-[450px] 2xl:h-[650px]">
@@ -260,7 +244,7 @@ export function CursoVerano2023() {
                         width={1600}
                         height={1066}
                         alt=""
-                        src="https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/piso.jpg" />
+                        src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_4_b7qmxt.jpg" />
                       {/* <p className="legend">Legend 3</p> */}
                     </div>
                   </Carousel>
@@ -303,14 +287,6 @@ export function CursoVerano2023() {
                   *Cupo limite 12 alumnos(as).
                 </p>
               </div> 
-            </div>
-            <div className="w-full flex flex-col justify-center gap-4">
-              <h3 className="font-semibold text-2xl text-center">Costos</h3>
-              <ul className="list-disc text-start list-inside">
-                <li>
-                  Costo normal - $3300 pesos.
-                </li>
-              </ul>
             </div>
             <div className="w-full flex flex-col gap-4">
               <h3 className="font-semibold text-2xl text-center">Promociones</h3>

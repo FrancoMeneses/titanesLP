@@ -25,7 +25,7 @@ export const Inicio = () => {
             <p className="w-full text-center font-semibold text-2xl">Actividades</p>
             <div className="overflow-hidden flex flex-col md:flex-row md:justify-around border md:border-none rounded-lg w-full">
               {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[20%] border-white border-b md:border-none" tabIndex="1">
+              <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none" tabIndex="1">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
                   <h2 className="text-center w-full transition ease duration-500">
                     Mini Gym
@@ -49,7 +49,7 @@ export const Inicio = () => {
               </div>
               {/* <!-- accordion-tab --> */}
               {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[20%] border-white border-b md:border-none" tabIndex="2">
+              <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none" tabIndex="2">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
                   <h2 className="text-center w-full transition ease duration-500">
                     Parkour
@@ -73,7 +73,7 @@ export const Inicio = () => {
               </div>
               {/* <!-- accordion-tab --> */}
               {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[20%] border-white border-b md:border-none">
+              <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
                   <NavLink to='/sucursal2#porristas' className="text-center w-full group-focus:font-semibold text-white transition ease duration-500">
                     Porristas
@@ -82,7 +82,7 @@ export const Inicio = () => {
               </div>
               {/* <!-- accordion-tab --> */}
               {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[40%]">
+              <div className="group outline-none accordion-section w-full md:w-[31%]">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
                   <NavLink to='/sucursal2#gimnasia' className="text-center w-full group-focus:font-semibold text-white transition ease duration-500">
                     Gimnasia Femenil y Varonil

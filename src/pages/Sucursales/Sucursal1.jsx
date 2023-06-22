@@ -142,7 +142,7 @@ export const Sucursal1 = () => {
                 <span className="visually-hidden">Next</span>
               </button>
             </div> */}
-            <div className="h-[200px] w-full bg-no-repeat bg-local bg-[center_top_-600px] lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dovrrjhdw/image/upload/v1686468552/titanesLP/9_rxqkxm.jpg)' }}></div>
+            <div className="h-[200px] w-full bg-no-repeat bg-local bg-cover bg-center lg:bg-[center_top_-650px] lg:bg-cover lg:h-[400px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603839/titanes/Landing%20Page/Sucursal1/_PIC0129.jpg)' }}></div>
             <div className="text-center flex flex-col gap-y-6">
               <p className="text-2xl font-semibold text-center mt-6 mb-6">Horarios</p>
               <div className="text-center flex flex-col gap-6 border-2 border-[#b00000] rounded-md h-auto w-[250px] md:w-[295px] p-6 md:p-10 justify-center md:justify-start">
@@ -160,7 +160,7 @@ export const Sucursal1 = () => {
       <div>
         <p className="text-3xl font-semibold text-center my-12">Parkour</p>
         <p className="text-justify my-8 px-5 md:px-10 lg:px-16 text-lg">Parkour, el arte del movimiento, deporte que puede ser practicado en cualquier edad, tenemos grupos para niños y niñas, jóvenes y adultos, donde desarrollarás fuerza, flexibilidad, agilidad, coordinación y sobre todo también aprenderas acrobacias. Te invitamos a aprender esta divertida actividad donde no se requiere tener experiencia.</p>
-        <div className="h-[200px] bg-[length:1000px_700px] bg-no-repeat bg-local bg-[center_top_-200px] lg:bg-cover lg:h-[300px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1679603030/titanes/Landing%20Page/Actividades/Parkour/_DSC2527.jpg)' }}></div>
+        <div className="h-[200px] w-full bg-no-repeat bg-local bg-cover bg-center lg:bg-[center_top_-300px] lg:bg-cover lg:h-[400px] border border-solid border-[#b00000]" style={{ backgroundImage: 'url(https://res.cloudinary.com/dfnqqumsc/image/upload/v1680311648/titanes/Landing%20Page/Sucursal1/cama.jpg)' }}></div>
         <div id="parkour2-suc1" className="my-8 px-5 md:px-10 lg:px-16">
           <p className="text-3xl font-semibold text-center my-12">Horarios - Categorías</p>
           <div className="flex flex-col md:flex-row md:justify-between w-full lg:flex-row lg:justify-between justify-center items-center md:items-start lg:items-start text-center gap-8">
