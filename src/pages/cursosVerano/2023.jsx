@@ -63,18 +63,18 @@ export function CursoVerano2023() {
               <h3 className="font-semibold text-2xl text-center">Promociones</h3>
               <ul className="list-disc text-start list-inside">
                 <li>
-                  Antes del 17 de junio - $3150 pesos.
+                  <strong>Antes del 4 de julio - $2990 pesos.</strong>
                 </li>
                 <li>
-                  Antes del 30 de junio - $3355 pesos. 
+                  5 al 18 de julio - $3355 pesos. 
                 </li>
                 <li>
-                  1 al 15 de julio - $3550 pesos. 
+                  19 de julio en adelante - $3550 pesos. 
                 </li>
               </ul>
               <div className="w-full flex flex-col">
                 <p className='font-semibold'>
-                  *Puede apartar la promoción y lugar con el 50%, liquidando 5 dias antes de inicio del curso.
+                  Puede <strong>apartar la promoción y lugar con $1000 pesos</strong> y liquidar antes del 20 de julio.
                 </p>
                 <p className='font-semibold'>
                   *Contamos con descuento por hermanos(as).
@@ -163,18 +163,18 @@ export function CursoVerano2023() {
               <h3 className="font-semibold text-2xl text-center">Promociones</h3>
               <ul className="list-disc text-start list-inside">
                 <li>
-                  Antes del 17 de junio - $2600 pesos.
+                <strong>Antes del 4 de julio - $2600 pesos.</strong>
                 </li>
                 <li>
-                  Antes del 30 de junio - $2800 pesos. 
+                  5 al 18 de julio - $2800 pesos. 
                 </li>
                 <li>
-                  1 al 15 de julio - $3000 pesos. 
+                  19 de julio en adelante - $3300 pesos. 
                 </li>
               </ul>
               <div className="w-full flex flex-col">
                 <p className='font-semibold'>
-                  *Puede apartar la promoción y lugar con el 50%, liquidando 5 dias antes de inicio del curso.
+                Puede <strong>apartar la promoción y lugar con $1000 pesos</strong> y liquidar antes del 20 de julio.
                 </p>
                 <p className='font-semibold'>
                   *Contamos con descuento por hermanos(as).
@@ -292,18 +292,18 @@ export function CursoVerano2023() {
               <h3 className="font-semibold text-2xl text-center">Promociones</h3>
               <ul className="list-disc text-start list-inside">
                 <li>
-                  Antes del 17 de junio - $2600 pesos.
+                <strong>Antes del 4 de julio - $2600 pesos.</strong>
                 </li>
                 <li>
-                  Antes del 30 de junio - $2800 pesos. 
+                  5 al 18 de julio - $2800 pesos.
                 </li>
                 <li>
-                  1 al 15 de julio - $3000 pesos. 
+                  19 de julio en adelante - $3300 pesos.
                 </li>
               </ul>
               <div className="w-full flex flex-col">
                 <p className='font-semibold'>
-                  *Puede apartar la promoción y lugar con el 50%, liquidando 5 dias antes de inicio del curso.
+                Puede <strong>apartar la promoción y lugar con $1000 pesos</strong> y liquidar antes del 20 de julio.
                 </p>
                 <p className='font-semibold'>
                   *Contamos con descuento por hermanos(as).
