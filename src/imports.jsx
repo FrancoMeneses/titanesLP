@@ -13,4 +13,5 @@ import { CursoVerano2023 } from "./pages/cursosVerano/2023"
 import { BtnCursoVerano } from "./components/btonCursoVerano"
 import { VeranoForm } from "./components/modalFormVerano"
 
+
 export { Navbar, Footer, Whatsapp, Inicio, Sucursal1, Cheerleading, Parkour, Gimnasia, Aviso, BtnWhatsApp, WaForm, CursoVerano2023, BtnCursoVerano, VeranoForm }
