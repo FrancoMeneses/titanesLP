@@ -1,4 +1,4 @@
-import { Footer, Inicio, Sucursal1, Sucursal2, Cheerleading, Parkour, Gimnasia, Aviso, Whatsapp, WaForm, VeranoForm, CursoVerano2023 } from './imports'
+import { Footer, Inicio, Sucursal1, Cheerleading, Parkour, Gimnasia, Aviso, Whatsapp, WaForm, VeranoForm } from './imports'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 import { Navbar } from './components/navbar'
@@ -29,10 +29,6 @@ const router = createBrowserRouter([
         element: <Sucursal1 />
       },
       {
-        path: "/sucursal2",
-        element: <Sucursal2 />
-      },
-      {
         path: "/cheerleading",
         element: <Cheerleading />
       },
@@ -47,10 +43,6 @@ const router = createBrowserRouter([
       {
         path: "/aviso-privacidad",
         element: <Aviso />
-      },
-      {
-        path: "/curso-de-verano-2023",
-        element: <CursoVerano2023 />
       }
     ]
   }

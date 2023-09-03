@@ -13,19 +13,19 @@ export const Inicio = () => {
       <Header id='p-f-home' title="TITANES ALL-STARS" />
       <div className="flex flex-col bg-black text-white">
         <section className="flex flex-col w-full justify-center items-center gap-6 px-5 md:px-10 lg:px-16 py-8">
-          <div>
+          {/* <div>
             <video className="w-auto md:w-[640px] md:h-[480px]" autoPlay muted controls>
               <source src="https://res.cloudinary.com/dovrrjhdw/video/upload/v1686542289/titanesLP/video_promocional_mayo_23_dehlat.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-3">
             <BtnCursoVerano />
-          </div>
+          </div> */}
           <section id="actividades-home" className="w-full flex flex-col gap-2 justify-center items-center">
             <p className="w-full text-center font-semibold text-2xl">Actividades</p>
-            <div className="overflow-hidden flex flex-col md:flex-row md:justify-around border md:border-none rounded-lg w-full">
+            <div className="overflow-hidden flex flex-col md:flex-row md:justify-around border md:border-none rounded-lg w-full md:w-[80%] max-w-[1000px]">
               {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none" tabIndex="1">
+              {/* <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none" tabIndex="1">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
                   <h2 className="text-center w-full transition ease duration-500">
                     Mini Gym
@@ -46,10 +46,10 @@ export const Inicio = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               {/* <!-- accordion-tab --> */}
-              {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none" tabIndex="2">
+              {/* <!-- accordion-tab Parkour 2 sucursales  --> */}
+              {/* <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none" tabIndex="2">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
                   <h2 className="text-center w-full transition ease duration-500">
                     Parkour
@@ -70,25 +70,40 @@ export const Inicio = () => {
                     </li>
                   </ul>
                 </div>
+              </div> */}
+              {/* <!-- Mini Gym --> */}
+              <div className="group outline-none accordion-section w-full md:w-[50%] border-white border-b md:border-none">
+                <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
+                  <NavLink to='/sucursal1#mini' className="text-center w-full group-focus:font-semibold text-white transition ease duration-500">
+                    Mini Gym
+                  </NavLink>
+                </div>
               </div>
-              {/* <!-- accordion-tab --> */}
-              {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none">
+              {/* <!--  Parkour --> */}
+              <div className="group outline-none accordion-section w-full md:w-[50%] border-white border-b md:border-none">
+                <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
+                  <NavLink to='/sucursal1#parkour' className="text-center w-full group-focus:font-semibold text-white transition ease duration-500">
+                    Parkour
+                  </NavLink>
+                </div>
+              </div>
+              {/* <!--   --> */}
+              {/* <div className="group outline-none accordion-section w-full md:w-[23.3%] border-white border-b md:border-none">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
                   <NavLink to='/sucursal2#porristas' className="text-center w-full group-focus:font-semibold text-white transition ease duration-500">
                     Porristas
                   </NavLink>
                 </div>
-              </div>
+              </div> */}
               {/* <!-- accordion-tab --> */}
               {/* <!-- accordion-tab  --> */}
-              <div className="group outline-none accordion-section w-full md:w-[31%]">
+              {/* <div className="group outline-none accordion-section w-full md:w-[31%]">
                 <div className="group bg-[#b00000] flex justify-between px-4 py-3 items-center transition ease duration-500 cursor-pointer pr-10 relative">
                   <NavLink to='/sucursal2#gimnasia' className="text-center w-full group-focus:font-semibold text-white transition ease duration-500">
                     Gimnasia Femenil y Varonil
                   </NavLink>
                 </div>
-              </div>
+              </div> */}
               {/* <!-- accordion-tab --> */}
             </div>
           </section>
@@ -183,113 +198,6 @@ export const Inicio = () => {
                   Ver más
                 </NavLink>
               </div>
-            </div>
-          </div>
-        </section>
-        <div className="w-full px-4 h-1 bg-slate-100 rounded my-6"></div>
-        <section className="w-full h-full text-white py-8 px-5 md:px-10 lg:px-16 flex flex-col items-center">
-          <div className="text-center flex flex-col items-center">
-            <p className="text-3xl font-semibold mb-6">
-              Sucursal 2
-              <br />
-              Calzada Zavaleta
-            </p>
-            {/* <div className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-x-8 md:flex-row md:gap-x-4 lg:my-6">
-                <div className="flex flex-col gap-y-8">
-                  <div className="flex flex-col gap-y-3">
-                    <p className="text-xl font-semibold">Dirección</p>
-                    <p className="text-xl">Calzada Zavaleta, Número 3708-1, Colonia Santa Cruz Buenavista, C.P. 72150 Puebla, Pue.</p>
-                  </div>
-                  <div className="flex flex-col gap-y-3">
-                    <p className="text-xl font-semibold">Horario de atención</p>
-                    <p className="text-xl">Martes a viernes de 4:00 pm a 7:30 pm</p>
-                    <p className="text-xl">Sábados de 9:00 am a 11:30 am</p>
-                  </div>
-                </div>
-                <div className="my-4">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.292018042998!2d-98.25103648536971!3d19.050894287102352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc7bfa3c51a2d%3A0xdcff1bd819746fdf!2sTitanes%20Puebla%20All%20Star%202!5e0!3m2!1ses-419!2smx!4v1673898991254!5m2!1ses-419!2smx" className="w-[320px] h-[320px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-md" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div> */}
-            <div className="w-full h-full flex flex-col justify-center items-center gap-2">
-              <p className="text-2xl font-semibold mb-4">Instalaciones</p>
-              <div className="w-full h-full border border-white rounded-lg">
-                <Carousel
-                  showThumbs={false}
-                  showStatus={false}
-                  infiniteLoop
-                  interval={3000}
-                  autoPlay
-                >
-                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
-                    <img className="w-full h-full object-cover object-center rounded-lg"
-                      width={1600}
-                      height={1066}
-                      alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_5_eh3ygy.jpg"
-                    />
-                    {/* <p className="legend">Fosa</p> */}
-                  </div>
-                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
-                    <img className="w-full h-full object-cover object-center rounded-lg"
-                      width={1600}
-                      height={1066}
-                      alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_6_oammfs.jpg" />
-                    {/* <p className="legend">Legend 2</p> */}
-                  </div>
-                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
-                    <img className="w-full h-full object-cover object-center rounded-lg"
-                      width={1600}
-                      height={1066}
-                      alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_4_b7qmxt.jpg" />
-                    {/* <p className="legend">Legend 3</p> */}
-                  </div>
-                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
-                    <img className="w-full h-full object-cover object-center rounded-lg"
-                      width={1600}
-                      height={1066}
-                      alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_3_uvc8kd.jpg" />
-                    {/* <p className="legend">Legend 3</p> */}
-                  </div>
-                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
-                    <img className="w-full h-full object-cover object-center rounded-lg"
-                      width={1600}
-                      height={1066}
-                      alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_1_bmxrhf.jpg" />
-                    {/* <p className="legend">Legend 3</p> */}
-                  </div>
-                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
-                    <img className="w-full h-full object-cover object-center rounded-lg"
-                      width={1600}
-                      height={1066}
-                      alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_7_uv1wyy.jpg" />
-                    {/* <p className="legend">Legend 3</p> */}
-                  </div>
-                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
-                    <img className="w-full h-full object-cover object-center rounded-lg"
-                      width={1600}
-                      height={1066}
-                      alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_2_tv9yqq.jpg" />
-                    {/* <p className="legend">Legend 3</p> */}
-                  </div>
-                  <div className="w-full h-[216.5px] md:h-[550px] 2xl:h-[650px]">
-                    <img className="w-full h-full object-cover object-center rounded-lg"
-                      width={1600}
-                      height={1066}
-                      alt=""
-                      src="https://res.cloudinary.com/dovrrjhdw/image/upload/v1686788224/titanesLP/Sucursal%202/Instalaciones_8_wptbyl.jpg" />
-                    {/* <p className="legend">Legend 3</p> */}
-                  </div>
-                </Carousel>
-              </div>
-              <NavLink to='/sucursal2' className='w-[150px] text-white h-fit rounded-full px-4 py-2 mt-[50px] bg-[#b00000] transition ease-in duration-200 hover:-translate-y-1 hover:scale-110'>
-                Ver más
-              </NavLink>
             </div>
           </div>
         </section>

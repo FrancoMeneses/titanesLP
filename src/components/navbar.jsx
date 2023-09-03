@@ -21,7 +21,7 @@ export const Navbar = () => {
             (navbarOpen ? "transition-all duration-300 ease-in-out relative" : " hidden")
           }>
             <ul className={"bg-neutral-700 w-full absolute flex top-0 flex-col justify-center items-center border rounded md:bg-transparent md:static md:border-transparent lg:bg-transparent lg:static lg:border-transparent shadow md:shadow-none lg:shadow-none md:flex md:flex-row md:w-auto md:gap-x-6 lg:flex lg:flex-row lg:w-auto lg:gap-x-6"}>
-              <li className="transition duration-1000 hover:text-[#c0c0c0] leading-snug h-6 text-center">
+              <li className="transition duration-300 hover:text-[#c0c0c0] leading-snug h-6 text-center">
                 <NavLink end to='/' className={({ isActive }) =>
                   isActive ? "font-bold" : "undefined"
                 }
@@ -29,7 +29,15 @@ export const Navbar = () => {
                   Inicio
                 </NavLink>
               </li>
-              <li className="group/suc">
+              <li className="transition duration-300 hover:text-[#c0c0c0] leading-snug h-6 text-center">
+                <NavLink end to='/sucursal1' className={({ isActive }) =>
+                  isActive ? "font-bold" : "undefined"
+                }
+                  onClick={() => setNavbarOpen(false)}>
+                  Sucursal 1
+                </NavLink>
+              </li>
+              {/* <li className="group/suc">
                 <button id="butSuc">
                   <div id="div-smS" className="flex transition duration-300 hover:text-[#c0c0c0] leading-snug">
                     <span id="smS-span">Sucursales</span>
@@ -46,18 +54,9 @@ export const Navbar = () => {
                       Sucursal 1
                     </NavLink>
                   </li>
-                  <li className="my-1 transition duration-300 hover:text-[#c0c0c0] leading-snug">
-                    <NavLink end to='/sucursal2'
-                      className={({ isActive }) =>
-                        isActive ? "font-semibold" : "undefined"
-                      }
-                      onClick={() => setNavbarOpen(false)}>
-                      Sucursal 2
-                    </NavLink>
-                  </li>
                 </ul>
-              </li>
-              <li className="group/ver">
+              </li> */}
+              {/* <li className="group/ver">
                 <button id="butVer">
                   <div id="div-smS" className="flex transition duration-300 hover:text-[#c0c0c0] leading-snug">
                     <span id="smS-span">Curso de verano 2023</span>
@@ -84,7 +83,7 @@ export const Navbar = () => {
                     </NavLink>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               {/* <li className="group/act">
                 <button id="act-btn" className="transition duration-300 hover:text-[#c0c0c0] leading-snug">
                   <div className="flex">

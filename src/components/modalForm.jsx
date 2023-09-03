@@ -43,9 +43,6 @@ export function WaForm() {
             <select name="actividad" id="actividad-s" onChange={handleEditContactForm} value={waForm.actividad} className="w-full border-2 border-[#b00000] rounded-lg h-[50px] py-1 px-2 bg-white">
               <option value="Mini gym">Mini gym</option>
               <option value="Parkour">Parkour</option>
-              <option value="Porristas">Porristas</option>
-              <option value="Gimnasia Femenil">Gimnasia Femenil</option>
-              <option value="Gimnasia Varonil">Gimnasia Varonil</option>
             </select>
             <p id="actividad-p" className="hidden italic text-red-500">Este campo es obligatorio</p>
           </div>
