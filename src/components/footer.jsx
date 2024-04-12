@@ -15,7 +15,7 @@ export const Footer = () => {
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center items-center h-full md:gap-4 text-white text-[12px]">
         <p>
-          Derechos de autor © 2023 Titanes All-Stars
+          Derechos de autor © 2024 Titanes All-Stars
         </p>
         <NavLink to='/aviso-privacidad' className='underline'>
           Aviso de privacidad
