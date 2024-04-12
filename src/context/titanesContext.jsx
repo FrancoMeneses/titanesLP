@@ -4,6 +4,8 @@ export const TitanesContext = createContext()
 
 export function TitanesProvider({children}){
 
+  const NUM_WA = '2213227932'
+
   const [waForm, setWaForm] = useState({
     clasePara: 'para mi',
     nombre: '',
@@ -98,7 +100,7 @@ export function TitanesProvider({children}){
             break
         }
       }
-      window.open(`https://wa.me/2227080520?text=${message}`,)
+      window.open(`https://wa.me/${NUM_WA}?text=${message}`,)
       const modal = document.getElementById('modalId')
       modal.classList.remove('flex')
       modal.classList.add('hidden')
@@ -167,7 +169,7 @@ const handleSubmitVeranoForm = (e) => {
           break
       }
     }
-    window.open(`https://wa.me/2212345135?text=${message}`,)
+    window.open(`https://wa.me/${NUM_WA}?text=${message}`,)
     const modal = document.getElementById('modalVerano')
     modal.classList.remove('flex')
     modal.classList.add('hidden')
@@ -191,7 +193,8 @@ const handleSubmitVeranoForm = (e) => {
       veranoForm,
       setVeranoForm,
       handleEditVeranoForm,
-      handleSubmitVeranoForm
+      handleSubmitVeranoForm,
+      NUM_WA
     }}
     >
       {children}
